@@ -12,7 +12,7 @@
       transition-next="slide-left"
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true"
-      style="height: 600px"
+      style="height: 400px"
     >
       <q-carousel-slide
         :name="1"

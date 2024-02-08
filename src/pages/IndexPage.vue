@@ -4,15 +4,15 @@
     <ImageCarousel />
 
     <div
-      class="q-pa-md"
-      style="
-        width: 82vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
+      :class="$q.platform.is.mobile ? 'q-pa-sm' : 'q-pa-md'"
+      style="margin-top: 50px"
+      :style="
+        $q.platform.is.mobile
+          ? ''
+          : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 50px;'
       "
     >
-      <div class="row items-start q-gutter-md">
+      <div class="row q-gutter-md">
         <div :class="$q.platform.is.mobile ? '' : 'col'">
           <q-card class="my-card">
             <q-item>
@@ -92,16 +92,16 @@
 
     <!-- News -->
     <div
+      :class="$q.platform.is.mobile ? '' : 'q-pa-md'"
       class="q-pa-md"
-      style="
-        width: 82vw;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
+      :style="
+        $q.platform.is.mobile
+          ? ''
+          : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 50px;'
       "
     >
       <div class="row items-start q-gutter-md">
-        <div :class="$q.platform.is.mobile ? '' : 'col-4'">
+        <div :class="$q.platform.is.mobile ? 'col-12' : 'col-4'">
           <q-card class="my-card">
             <q-item>
               <q-item-section>
@@ -112,18 +112,27 @@
             <q-card-section> </q-card-section>
           </q-card>
         </div>
-        <div :class="$q.platform.is.mobile ? '' : 'col-4'">
+        <div :class="$q.platform.is.mobile ? 'col-12' : 'col-4'">
           <q-card class="my-card">
             <q-item>
               <q-item-section>
                 <h5 class="q-my-xs">Circulars</h5>
+                <div class="row">
+                  <div class="col">
+                    <q-card class="my-card">
+                      <q-card-section>
+                        {{ lorem }}
+                      </q-card-section>
+                    </q-card>
+                  </div>
+                </div>
               </q-item-section>
             </q-item>
             <q-separator inset />
             <q-card-section> </q-card-section>
           </q-card>
         </div>
-        <div :class="$q.platform.is.mobile ? '' : 'col-3'">
+        <div :class="$q.platform.is.mobile ? 'col-12' : 'col-3'">
           <q-card class="my-card">
             <q-item>
               <q-item-section>

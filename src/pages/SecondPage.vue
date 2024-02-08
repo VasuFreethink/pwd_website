@@ -19,7 +19,16 @@
           :class="$q.platform.is.mobile ? 'col-12' : 'col-8'"
         >
           <!-- Introduction Card -->
-          <q-card class="my-card">
+          <h5 class="q-my-sm text-h4 text-bold">PUBLIC WORKS DEPARTMENT</h5>
+          <p style="text-align: justify">
+            The Public Works Department plays a major role in the economic,
+            Commercial and tourist development of the State of Goa. Being a
+            service Department, it is entrusted with all the developmental
+            activities like Planning, Design, Construction, Operation and
+            Maintenance of all types of construction works in this State of Goa.
+          </p>
+
+          <!-- <q-card class="my-card">
             <q-item>
               <q-item-section>
                 <h5 class="q-my-xs">Introduction</h5>
@@ -49,7 +58,7 @@
                 Altinho, Panaji, heads the Public Works Department.
               </p>
             </q-card-section>
-          </q-card>
+          </q-card> -->
           <!-- Message by CM Card -->
           <q-card
             class="my-card"
@@ -99,56 +108,217 @@
           class="q-pa-md"
           :class="$q.platform.is.mobile ? 'col-12' : 'col-4'"
         >
-          <!-- card1  -->
-          <q-card class="my-card">
-            <q-item>
-              <q-item-section>
-                <h5 class="q-my-xs">Notice</h5>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section> </q-card-section>
-          </q-card>
-          <!-- card 2 -->
-          <q-card
-            class="my-card"
-            :class="$q.platform.is.mobile ? 'q-mt-md' : 'q-mt-lg'"
-          >
-            <q-item>
-              <q-item-section>
-                <h5 class="q-my-xs">Circulars</h5>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section> </q-card-section>
-          </q-card>
-          <!-- card 3 -->
-          <q-card
-            class="my-card"
-            :class="$q.platform.is.mobile ? 'q-mt-md' : 'q-mt-lg'"
-          >
-            <q-item>
-              <q-item-section>
-                <h5 class="q-my-xs">Contacts</h5>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section> </q-card-section>
-          </q-card>
+          <display-links :json-data="importantLinks" />
+
+          <announcement-panel :json-data="importantNotices" />
         </div>
       </div>
+
+      <!-- Notices sections -->
+      <section>
+        <div class="row">
+          <!-- Main Structure 4 -->
+          <div
+            class="q-pa-md"
+            :class="$q.platform.is.mobile ? 'col-12' : 'col-4'"
+          >
+            <announcement-panel :json-data="importantNotices" />
+          </div>
+          <!-- Main Structure 4 -->
+          <div
+            class="q-pa-md"
+            :class="$q.platform.is.mobile ? 'col-12' : 'col-4'"
+          >
+            <announcement-panel :json-data="importantNotices" />
+          </div>
+          <!-- Main Structure 4 -->
+          <div
+            class="q-pa-md"
+            :class="$q.platform.is.mobile ? 'col-12' : 'col-4'"
+          >
+            <announcement-panel :json-data="importantNotices" />
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- Recent Work Section-->
+    <!-- <section class="bg-primary" style="padding-bottom: 50px; padding-top: 1px">
+      <h4
+        :class="$q.platform.is.mobile ? 'text-h5' : 'text-h5'"
+        class="text-bold text-center text-white text-uppercase"
+      >
+        RECENT WORK
+      </h4>
+      <div
+        v-if="!$q.platform.is.mobile"
+        class=""
+        style="
+          width: 82vw;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 50px;
+        "
+      >
+        <div v-if="recentWork" class="row no-wrap">
+          <div
+            v-for="(work, index) in displayedWorks"
+            :key="index"
+            class="col-3 q-px-sm"
+          >
+            <q-card class="my-card" style="height: 100%">
+              <img :src="work.Image" style="object-fit: cover; height: 200px" />
+
+              <q-card-section class="q-pb-none">
+                <div class="text-subtitle1 text-bold text-uppercase">
+                  {{ truncateText(work.Title, 30) }}
+                </div>
+                <div class="text-body2 text-grey-9 q-mt-xs text-justify">
+                  {{ truncateText(work.Description, 80) }}
+                </div>
+                <div class="text-right">
+                  <q-btn
+                    flat
+                    color="primary"
+                    class="q-my-sm"
+                    label="Read More"
+                    clickable
+                    v-ripple
+                    @click="openDialog(work, recentWork)"
+                  />
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
+        </div>
+      </div>
+
+      <div v-if="$q.platform.is.mobile">
+        <q-carousel
+          v-model="slide"
+          transition-prev="slide-right"
+          transition-next="slide-left"
+          swipeable
+          :autoplay="autoplay"
+          animated
+          control-color="black"
+          navigation
+          arrows
+          class="bg-primary shadow-none q-pa-none"
+          v-if="recentWork"
+        >
+          <q-carousel-slide
+            v-for="(work, index) in displayedWorks"
+            :key="index"
+            :name="index + 1"
+            class="column no-wrap shadow-1"
+          >
+            <div
+              class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap"
+            >
+              <q-card class="my-card" style="height: 100%">
+                <img
+                  :src="work.Image"
+                  style="object-fit: cover; height: 200px"
+                />
+
+                <q-card-section class="q-pb-none">
+                  <div class="text-subtitle1 text-bold text-uppercase">
+                    {{ truncateText(work.Title, 30) }}
+                  </div>
+                  <div class="text-body2 text-grey-9 q-mt-xs text-justify">
+                    {{ truncateText(work.Description, 80) }}
+                  </div>
+                  <div class="text-right">
+                    <q-btn
+                      flat
+                      color="primary"
+                      class="q-my-sm"
+                      label="Read More"
+                      clickable
+                      v-ripple
+                      @click="openDialog(work, recentWork)"
+                    />
+                  </div>
+                </q-card-section>
+              </q-card>
+            </div>
+          </q-carousel-slide>
+        </q-carousel>
+      </div>
+    </section> -->
+    <detailed-card :jsonData="recentWork" />
+
+    <!-- Schemes Section -->
+    <image-cards :jsonData="schemes" />
+
+    <!-- InfoDialog -->
+    <InfoDialog
+      :item="selectedItem"
+      :data="selectedData"
+      v-model="dialogVisible"
+    />
   </q-page>
 </template>
 
 <script>
 import ImageCarousel from "src/components/ImageCarousel.vue";
+import AnnouncementPanel from "src/components/AnnouncementPanel.vue";
 import { defineComponent } from "vue";
+import homePageData from "../assets/jsons/homePageData.json";
+import InfoDialog from "src/components/InfoDialog.vue";
+import DisplayLinks from "src/components/DisplayLinks.vue";
+import ImageCards from "src/components/ImageCards.vue";
+import DetailedCard from "src/components/DetailedCard.vue";
 
 export default defineComponent({
   name: "SecondPage",
   components: {
     ImageCarousel,
+    AnnouncementPanel,
+    InfoDialog,
+    DisplayLinks,
+    ImageCards,
+    DetailedCard,
+  },
+  data() {
+    return {
+      homePageData: homePageData,
+      selectedItem: null,
+      selectedData: null,
+      dialogVisible: false,
+    };
+  },
+  computed: {
+    recentWork() {
+      return this.homePageData.RecentWork;
+    },
+    importantNotices() {
+      return this.homePageData.ImportantNotices;
+    },
+    importantLinks() {
+      return this.homePageData.ImportantLinks;
+    },
+    schemes() {
+      return this.homePageData.Schemes;
+    },
+    displayedWorks() {
+      return this.recentWork.Data.slice(0, 4);
+    },
+  },
+  methods: {
+    truncateText(text, value) {
+      if (text.length <= value) {
+        return text;
+      } else {
+        return text.slice(0, value) + "...";
+      }
+    },
+    openDialog(item, data) {
+      this.selectedItem = item;
+      this.selectedData = data;
+      this.dialogVisible = true;
+    },
   },
 });
 </script>

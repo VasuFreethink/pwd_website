@@ -1,0 +1,19 @@
+{
+  "title": "Important Notices",
+  "bulletIcon": "keyboard_double_arrow_right",
+  "items": [
+    {
+      "title": "Instructions To Candidates called for Physical Test.",
+      "description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
+      "downloadLink": "https:test.in/download_link.pdf",
+      "downloadButton": true,
+      "newIcon": true
+    },
+    {
+      "title": "Instructions To Students called for Verification of Documents.",
+      "downloadLink": "https:test.in/download_link.pdf",
+      "downloadButton": true,
+      "newIcon": true
+    }
+  ]
+}
