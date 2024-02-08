@@ -1,5 +1,9 @@
 <template>
-  <q-dialog persistent @update:value="updateDialogDisplayVisible">
+  <q-dialog
+    persistent
+    @update:value="updateDialogDisplayVisible"
+    :style="{ fontSize: fontSize }"
+  >
     <q-layout
       view="Lhh lpR fff"
       container
@@ -134,6 +138,9 @@
 
 <script>
 import InfoDialog from "./InfoDialog.vue";
+import { useGeneralStore } from "src/stores/generalStore";
+
+const generalStore = useGeneralStore();
 export default {
   components: {
     InfoDialog,
@@ -142,6 +149,12 @@ export default {
     data: {
       type: Object,
       required: true,
+    },
+  },
+  computed: {
+    // to get fontsize
+    fontSize() {
+      return this.generalStore.fontSize;
     },
   },
   methods: {
@@ -160,6 +173,8 @@ export default {
       selectedItem: null,
       selectedData: null,
       dialogVisible: false,
+
+      generalStore,
     };
   },
 };

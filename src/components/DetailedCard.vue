@@ -32,7 +32,11 @@
               <div class="text-subtitle1 text-bold text-uppercase">
                 {{ truncateText(item.Title, 30) }}
               </div>
-              <div class="text-body2 text-grey-9 q-mt-xs text-justify">
+              <div
+                class="text-body2 text-grey-9 q-mt-xs text-justify"
+                style="font-size: inherit !important"
+              >
+                <!-- :style="{ fontSize: fontSize + '!important' }" -->
                 {{ truncateText(item.Description, 80) }}
               </div>
               <div class="text-right">
@@ -117,6 +121,10 @@
 <script>
 import InfoDialog from "src/components/InfoDialog.vue";
 
+import { useGeneralStore } from "src/stores/generalStore";
+
+const generalStore = useGeneralStore();
+
 export default {
   props: {
     jsonData: {
@@ -127,6 +135,12 @@ export default {
   components: {
     InfoDialog,
   },
+  computed: {
+    // to get fontsize
+    fontSize() {
+      return this.generalStore.fontSize;
+    },
+  },
   data() {
     return {
       slide: 1,
@@ -135,6 +149,8 @@ export default {
       selectedItem: null,
       selectedData: null,
       dialogVisible: false,
+
+      generalStore,
     };
   },
   methods: {
