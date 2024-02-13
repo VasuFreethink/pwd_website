@@ -93,17 +93,20 @@
 
           <!-- announcements -->
           <div v-if="data.SectionType == 'announcements'">
-            <q-item
-              v-for="(item, index) in data.Data"
-              :key="index"
-              clickable
+            <q-item v-for="(item, index) in data.Data" :key="index">
+              <!-- clickable
               v-ripple
-              @click="openDialog(item, data)"
-            >
+              @click="openDialog(item, data)" -->
               <q-item-section side>
                 <q-icon color="" :name="data.BulletIcon" />
               </q-item-section>
-              <q-item-section>
+              <q-item-section
+                class="hoveritem"
+                style="padding: 2px"
+                clickable
+                v-ripple
+                @click="openDialog(item, jsonData)"
+              >
                 <q-item-label>
                   {{ item.Title }}
                   <q-icon
@@ -179,3 +182,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.hoveritem:hover {
+  background-color: rgba(0, 0, 0, 0.12); /* Change background color on hover */
+  cursor: pointer; /* Change cursor on hover */
+}
+</style>

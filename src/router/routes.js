@@ -10,9 +10,31 @@ const routes = [
     children: [{ path: "", component: () => import("pages/SecondPage.vue") }],
   },
   {
-    path: "/about",
+    path: "/about-us",
+    name: "AboutUs",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "", component: () => import("pages/AboutPage.vue") }],
+    children: [
+      {
+        path: "",
+        component: () => import("pages/AboutPage.vue"),
+      },
+    ],
+  },
+  {
+    path: "/gallery",
+    name: "Gallery",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        component: () => import("pages/GalleryPage.vue"),
+      },
+    ],
+  },
+  {
+    path: "/json",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/JsonEditor.vue") }],
   },
 
   // Always leave this as last one,

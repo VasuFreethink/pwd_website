@@ -1,0 +1,88 @@
+{
+  "NavBarTabs": {
+    "SectionTitle": "NavTabs",
+    "Data": [
+      {
+        "Name": "home",
+        "Label": "Home",
+        "Path": "/",
+        "Icon": "home"
+      },
+      {
+        "Name": "aboutus",
+        "Label": "ABOUT US",
+        "Path": "about-us",
+        "Icon": "info",
+        "SubMenu": [
+          {
+            "Label": "HISTORY OF PWD Goa",
+            "Path": "/about-us"
+          },
+          {
+            "Label": "ORGANISATION CHART"
+          },
+          {
+            "Label": "CONTACT US"
+          }
+        ]
+      },
+      {
+        "Name": "schemes",
+        "Label": "SCHEMES",
+        "Icon": "receipt_long",
+        "SubMenu": [
+          {
+            "Label": "BUILDINGS"
+          },
+          {
+            "Label": "ROADS & BRIDGES"
+          },
+          {
+            "Label": "WATER SUPPLY & SANITATION"
+          },
+          {
+            "Label": "NATIONAL HIGHWAY"
+          }
+        ]
+      },
+      {
+        "Name": "circulars",
+        "Label": "CIRCULARS",
+        "Icon": "text_snippet",
+        "SubMenu": [
+          {
+            "Label": "ORDERS"
+          },
+          {
+            "Label": "CIRCULARS"
+          },
+          {
+            "Label": "DOCUMENTS"
+          }
+        ]
+      },
+      {
+        "Name": "easeofdoingbusiness",
+        "Label": "EASE OF DOING BUSINESS",
+        "Icon": "map"
+      },
+      {
+        "Name": "gallery",
+        "Label": "GALLERY",
+        "Icon": "map",
+        "Path": "/gallery"
+      },
+      {
+        "Name": "employeecorner",
+        "Label": "EMPLOYEE CORNER",
+        "Icon": "assignment_ind"
+      },
+      {
+        "Name": "publicgrievance",
+        "Label": "PUBLIC GRIEVANCE",
+        "Icon": "public",
+        "Link": "https://goaonline.gov.in/HomePage"
+      }
+    ]
+  }
+}

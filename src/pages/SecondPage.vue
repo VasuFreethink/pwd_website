@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <ImageCarousel />
+    <ImageCarousel :jsonData="mainImageCarousel" />
 
     <div
       :class="$q.platform.is.mobile ? '' : 'q-pa-md'"
@@ -29,7 +29,17 @@
           </p>
 
           <!-- Message by CM Card -->
-          <message-card />
+          <message-card :jsonData="cmMessageCard" />
+
+          <div class="row q-mt-md">
+            <div class="col-md-6 col q-pr-sm">
+              <image-card :jsonData="billPaymentImageCard" />
+            </div>
+            <div class="col-md-6 col q-pl-sm">
+              <!-- <image-card :jsonData="secondImageCard" /> -->
+              <icon-card :jsonData="billIconCard" />
+            </div>
+          </div>
         </div>
         <!-- Main Structure 4 -->
         <div
@@ -95,6 +105,8 @@ import DisplayLinks from "src/components/DisplayLinks.vue";
 import ImageCards from "src/components/ImageCards.vue";
 import DetailedCard from "src/components/DetailedCard.vue";
 import MessageCard from "src/components/MessageCard.vue";
+import ImageCard from "src/components/ImageCard.vue";
+import IconCard from "src/components/IconCard.vue";
 
 export default defineComponent({
   name: "SecondPage",
@@ -106,6 +118,8 @@ export default defineComponent({
     ImageCards,
     DetailedCard,
     MessageCard,
+    ImageCard,
+    IconCard,
   },
   data() {
     return {
@@ -116,6 +130,9 @@ export default defineComponent({
     };
   },
   computed: {
+    mainImageCarousel() {
+      return this.homePageData.MainImageCarousel;
+    },
     recentWork() {
       return this.homePageData.RecentWork;
     },
@@ -130,6 +147,18 @@ export default defineComponent({
     },
     displayedWorks() {
       return this.recentWork.Data.slice(0, 4);
+    },
+    billPaymentImageCard() {
+      return this.homePageData.BillPaymentImageCard;
+    },
+    secondImageCard() {
+      return this.homePageData.SecondImageCard;
+    },
+    billIconCard() {
+      return this.homePageData.BillIconCard;
+    },
+    cmMessageCard() {
+      return this.homePageData.CmMessageCard;
     },
   },
   methods: {

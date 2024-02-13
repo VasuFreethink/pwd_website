@@ -49,15 +49,7 @@
           v-if="$q.platform.is.mobile"
           @click="toggleLeftDrawer"
         />
-        <q-tabs v-model="tab" v-if="!$q.platform.is.mobile" class="q-mx-auto">
-          <!-- <q-btn
-            flat
-            dense
-            round
-            icon="menu"
-            aria-label="Menu"
-            @click="toggleLeftDrawer"
-          /> -->
+        <!-- <q-tabs v-model="tab" v-if="!$q.platform.is.mobile" class="q-mx-auto">
           <q-tab name="home" label="Home" />
           <q-tab name="aboutus" label="ABOUT US">
             <q-menu menu-anchor="hover">
@@ -111,14 +103,35 @@
           <q-tab name="sitemap" label="SITEMAP" />
           <q-tab name="employeecorner" label="EMPLOYEE CORNER" />
           <q-tab name="publicgrievance" label="PUBLIC GRIEVANCE" />
+        </q-tabs> -->
+
+        <q-tabs v-if="!$q.platform.is.mobile" class="q-mx-auto">
+          <q-tab
+            v-for="(menuItem, index) in navBarTabs.Data"
+            :key="index"
+            :label="menuItem.Label"
+            @click="handleNavigation(menuItem)"
+          >
+            <!-- @click="$router.push({ path: 'about-us' })" -->
+            <q-menu v-if="menuItem.SubMenu" menu-anchor="hover">
+              <q-list>
+                <q-item
+                  v-for="(subItem, subIndex) in menuItem.SubMenu"
+                  :key="subIndex"
+                >
+                  <q-item-label>{{ subItem.Label }}</q-item-label>
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-tab>
         </q-tabs>
         <div class="q-px-xl"></div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above>
-      <!-- :width="200"
+    <!-- :width="200"
       :breakpoint="500" -->
+    <!-- <q-drawer v-model="leftDrawerOpen" show-if-above>
       <q-scroll-area class="fit">
         <q-list padding class="menu-list">
           <q-item active clickable v-ripple>
@@ -178,8 +191,78 @@
           </q-item>
         </q-list>
       </q-scroll-area>
-    </q-drawer>
+    </q-drawer> -->
 
+    <!-- <q-drawer v-model="leftDrawerOpen" show-if-above>
+      <q-scroll-area class="fit">
+        <q-list padding class="menu-list" seperator>
+          <q-item
+            v-for="(menuItem, index) in navBarTabs.Data"
+            :key="index"
+            clickable
+            v-ripple
+            @click="handleNavigation(menuItem)"
+          >
+            <q-item-section avatar>
+              <q-icon :name="menuItem.Icon" />
+            </q-item-section>
+            <q-item-section> {{ menuItem.Label }} </q-item-section>
+            <q-item v-if="menuItem.Submenu">
+              <q-item-section>
+                <q-icon name="arrow_drop_down" />
+              </q-item-section>
+            </q-item>
+            <q-menu v-if="menuItem.Submenu" menu-anchor="hover">
+              <q-list>
+                <q-item
+                  v-for="(subItem, subIndex) in menuItem.Submenu"
+                  :key="subIndex"
+                >
+                  <q-item-label>{{ subItem.Label }}</q-item-label>
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-item>
+        </q-list>
+      </q-scroll-area>
+    </q-drawer> -->
+
+    <q-drawer v-model="leftDrawerOpen" show-if-above>
+      <q-scroll-area class="fit">
+        <q-list padding class="menu-list" separator>
+          <q-item
+            v-for="(menuItem, index) in navBarTabs.Data"
+            :key="index"
+            clickable
+            v-ripple
+            @click="handleNavigation(menuItem)"
+          >
+            <q-item-section avatar>
+              <q-icon :name="menuItem.Icon" />
+            </q-item-section>
+            <q-item-section> {{ menuItem.Label }} </q-item-section>
+            <q-item v-if="menuItem.SubMenu">
+              <q-item-section>
+                <q-icon name="arrow_drop_down" />
+              </q-item-section>
+            </q-item>
+            <q-menu v-if="menuItem.SubMenu" menu-anchor="hover">
+              <q-list>
+                <q-item
+                  v-for="(subItem, subIndex) in menuItem.SubMenu"
+                  :key="subIndex"
+                  clickable
+                  v-ripple
+                  @click="handleNavigation(subItem)"
+                >
+                  <q-item-label>{{ subItem.Label }}</q-item-label>
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-item>
+        </q-list>
+      </q-scroll-area>
+    </q-drawer>
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -187,6 +270,7 @@
 </template>
 <script>
 import { useGeneralStore } from "src/stores/generalStore";
+import mainLayoutData from "../assets/jsons/mainLayoutData.json";
 
 const generalStore = useGeneralStore();
 
@@ -199,12 +283,52 @@ export default {
     return {
       leftDrawerOpen: false,
       generalStore,
+      mainLayoutData: mainLayoutData,
+
+      menu: [
+        { name: "home", label: "Home" },
+        {
+          name: "aboutus",
+          label: "ABOUT US",
+          submenu: [
+            { label: "HISTORY OF PWD Goa" },
+            { label: "ORGANISATION CHART" },
+            { label: "CONTACT US" },
+          ],
+        },
+        {
+          name: "schemes",
+          label: "SCHEMES",
+          submenu: [
+            { label: "BUILDINGS" },
+            { label: "ROADS & BRIDGES" },
+            { label: "WATER SUPPLY & SANITATION" },
+            { label: "NATIONAL HIGHWAY" },
+          ],
+        },
+        {
+          name: "circulars",
+          label: "CIRCULARS",
+          submenu: [
+            { label: "ORDERS" },
+            { label: "CIRCULARS" },
+            { label: "DOCUMENTS" },
+          ],
+        },
+        { name: "easeofdoingbusiness", label: "EASE OF DOING BUSINESS" },
+        { name: "sitemap", label: "SITEMAP" },
+        { name: "employeecorner", label: "EMPLOYEE CORNER" },
+        { name: "publicgrievance", label: "PUBLIC GRIEVANCE" },
+      ],
     };
   },
   computed: {
     // to get fontsize
     fontSize() {
       return this.generalStore.fontSize;
+    },
+    navBarTabs() {
+      return this.mainLayoutData.NavBarTabs;
     },
   },
 
@@ -222,6 +346,16 @@ export default {
     },
     resetFontSize() {
       this.generalStore.resetFontSize();
+    },
+
+    handleNavigation(menuItem) {
+      if (menuItem.Path) {
+        // Navigate to internal route if Path attribute exists
+        this.$router.push({ path: menuItem.Path });
+      } else if (menuItem.Link) {
+        // Navigate to external link if Link attribute exists
+        window.open(menuItem.Link, "_blank");
+      }
     },
   },
 

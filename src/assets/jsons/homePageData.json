@@ -85,7 +85,8 @@
     "SectionTitle": "Important Notices",
     "SectionType": "announcements",
     "BulletIcon": "keyboard_double_arrow_right",
-    "SummaryLength": 3,
+    "SummaryLength": 4,
+    "PrimaryColor": "primary",
     "Data": [
       {
         "Title": "Instructions To Candidates called for Physical Test.",
@@ -108,7 +109,46 @@
         "DownloadLink": "https:test.in/download_link.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": true
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Students called for Verification of Documents.",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Candidates called for Physical Test.",
+        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Students called for Verification of Documents.",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      }
+    ]
+  },
+  "Notifications": {
+    "SectionTitle": "Notifications",
+    "SectionType": "announcements",
+    "BulletIcon": "keyboard_double_arrow_right",
+    "SummaryLength": 4,
+    "PrimaryColor": "primary",
+    "Data": [
+      {
+        "Title": "Instructions To Candidates called for Physical Test.",
+        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
       },
       {
         "Title": "Instructions To Students called for Verification of Documents.",
@@ -123,6 +163,45 @@
         "DownloadLink": "https:test.in/download_link.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Students called for Verification of Documents.",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Candidates called for Physical Test.",
+        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Students called for Verification of Documents.",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      }
+    ]
+  },
+  "NoticeInvitingTenders": {
+    "SectionTitle": "Notice Inviting Tenders",
+    "SectionType": "announcements",
+    "BulletIcon": "keyboard_double_arrow_right",
+    "SummaryLength": 4,
+    "PrimaryColor": "primary",
+    "Data": [
+      {
+        "Title": "Instructions To Candidates called for Physical Test.",
+        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
         "NewIcon": true
       },
       {
@@ -130,7 +209,37 @@
         "DownloadLink": "https:test.in/download_link.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": true
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Candidates called for Physical Test.",
+        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Students called for Verification of Documents.",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Candidates called for Physical Test.",
+        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
+      },
+      {
+        "Title": "Instructions To Students called for Verification of Documents.",
+        "DownloadLink": "https:test.in/download_link.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false
       }
     ]
   },
@@ -140,6 +249,7 @@
     "DisplayIcon": true,
     "Display": "card",
     "SummaryLength": 5,
+    "BackgroundColorClass": "bg-grey-1",
     "Data": [
       {
         "Name": "CITIZEN CHARTERS",
@@ -205,6 +315,59 @@
       },
       {
         "Title": "NATIONAL HIGHWAY",
+        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+      }
+    ]
+  },
+  "BillPaymentImageCard": {
+    "SectionTitle": "Bill Payment",
+    "SectionType": "ImageCard",
+    "Data": {
+      "Image": "https://cdn.quasar.dev/img/parallax2.jpg",
+      "Link": "https://goaonline.gov.in/Appln/UIL/DeptServices?__DocId=PWD&__ServiceId=PWD01",
+      "OpenInNewTab": true
+    }
+  },
+
+  "BillIconCard": {
+    "SectionTitle": "Bill Payment",
+    "SectionType": "IconCard",
+    "Data": {
+      "Icon": "receipt_long",
+      "Title": "Bill Payment",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Color": "#1976d2",
+      "Link": "https://goaonline.gov.in/Appln/UIL/DeptServices?__DocId=PWD&__ServiceId=PWD01",
+      "OpenInNewTab": true,
+      "BackgroundColorClass": "bg-grey-1"
+    }
+  },
+  "CmMessageCard": {
+    "SectionTitle": "Message From CM",
+    "SectionType": "MessageCard",
+    "Data": {
+      "Title": "Message From Hon'ble Chief Minister, Goa",
+      "SubTitle": "Dr. Pramod Sawant",
+      "Description": "The Public Works Department plays a major role in the economic, commercial and touristic development of the State of Goa. Being a service Department, it is entrusted with all the developmental activities like Planning, Design, Construction, Operation and Maintenance of all types of construction works in this State of Goa. Following are the programmes which are under the Public Works Department: (1)Building Works : Functional and Non-functional (2) Roads and Bridges. (i) State Programmes. (ii)Centrally Sponsored programmes. (iii) National Highways. (iv) Western Ghat Development programme. (3) Water Supply and Sanitation (i)State Programmes. (ii)Centrally Sponsored programmes. (4) Electrical and Mechanical This includes Government Garage and workshop. In addition to the above, the construction for most of the other Departments, Local Bodies and some of the Autonomous organisations are also executed by the Public Works Department, as Deposit Works. A full-fledged Principal Chief Engineer, who is also the Ex-Officio Additional Secretary to the Government of Goa, having his head quarters at Altinho, Panaji, heads the Public Works Department.",
+      "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
+    }
+  },
+  "MainImageCarousel": {
+    "SectionTitle": "Image Carousel",
+    "SectionType": "ImageCarousel",
+    "Height": "400px",
+    "AutoPlay": true,
+    "Data": [
+      {
+        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
+      },
+      {
+        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+      },
+      {
+        "Image": "https://cdn.quasar.dev/img/mountains.jpg"
+      },
+      {
         "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
       }
     ]

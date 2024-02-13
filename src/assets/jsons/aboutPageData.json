@@ -5,7 +5,8 @@
     "TextFontSize": "17px",
     "Title": "PUBLIC WORKS DEPARTMENT",
     "Image": "https://cdn.quasar.dev/img/parallax1.jpg",
-    "Description": " The Public Works Department plays a major role in the economic, commercial and touristic development of the State of Goa. Being a service Department, it is entrusted with all the developmental activities like Planning, Design, Construction, Operation and Maintenance of all types of construction works in this State of Goa."
+    "Description": " The Public Works Department plays a major role in the economic, commercial and touristic development of the State of Goa. Being a service Department, it is entrusted with all the developmental activities like Planning, Design, Construction, Operation and Maintenance of all types of construction works in this State of Goa.",
+    "BackgroundColorClass": "bg-grey-1"
   },
   "ProgrammesData": {
     "SectionTitle": "Programmes Under Public Works Department",

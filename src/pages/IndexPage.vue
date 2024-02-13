@@ -1,10 +1,9 @@
 <template>
-  <!-- class="flex flex-center" -->
   <q-page>
-    <ImageCarousel />
+    <ImageCarousel :jsonData="mainImageCarousel" />
 
     <div
-      :class="$q.platform.is.mobile ? 'q-pa-sm' : 'q-pa-md'"
+      :class="$q.platform.is.mobile ? '' : 'q-pa-md'"
       style="margin-top: 50px"
       :style="
         $q.platform.is.mobile
@@ -12,156 +11,160 @@
           : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 50px;'
       "
     >
-      <div class="row q-gutter-md">
-        <div :class="$q.platform.is.mobile ? '' : 'col'">
-          <q-card class="my-card">
-            <q-item>
-              <q-item-section>
-                <h5 class="q-my-xs">Introduction</h5>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section>
-              <p class="justify-text" style="text-align: justify">
-                The Public Works Department plays a major role in the economic,
-                commercial and touristic development of the State of Goa. Being
-                a service Department, it is entrusted with all the developmental
-                activities like Planning, Design, Construction, Operation and
-                Maintenance of all types of construction works in this State of
-                Goa. Following are the programmes which are under the Public
-                Works Department: (1)Building Works : Functional and
-                Non-functional (2) Roads and Bridges. (i) State Programmes.
-                (ii)Centrally Sponsored programmes. (iii) National Highways.
-                (iv) Western Ghat Development programme. (3) Water Supply and
-                Sanitation (i)State Programmes. (ii)Centrally Sponsored
-                programmes. (4) Electrical and Mechanical This includes
-                Government Garage and workshop. In addition to the above, the
-                construction for most of the other Departments, Local Bodies and
-                some of the Autonomous organisations are also executed by the
-                Public Works Department, as Deposit Works. A full-fledged
-                Principal Chief Engineer, who is also the Ex-Officio Additional
-                Secretary to the Government of Goa, having his head quarters at
-                Altinho, Panaji, heads the Public Works Department.
-              </p>
-            </q-card-section>
-          </q-card>
+      <!-- Main Structure 8-4 -->
+      <div class="row">
+        <!-- Main Structure 8 -->
+        <div
+          class="q-pa-md"
+          :class="$q.platform.is.mobile ? 'col-12' : 'col-8'"
+        >
+          <image-card-description :jsonData="aboutImageCard" />
+
+          <div class="row q-mt-md" style="">
+            <div
+              class="col-md-6 col-12"
+              :class="{ 'q-pr-sm': !$q.screen.lt.md }"
+            >
+              <image-card :jsonData="billPaymentImageCard" />
+            </div>
+            <div
+              class="col-md-6 col-12"
+              :class="{
+                'q-pl-sm': !$q.screen.lt.md,
+                'q-mt-md': $q.screen.lt.md,
+              }"
+            >
+              <icon-card :jsonData="billIconCard" />
+            </div>
+          </div>
         </div>
-        <div :class="$q.platform.is.mobile ? '' : 'col'">
-          <q-card class="my-card">
-            <q-item>
-              <q-item-section avatar>
-                <q-avatar style="height: 70px; width: 70px">
-                  <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
-                </q-avatar>
-              </q-item-section>
-              <q-item-section>
-                <h5 class="q-my-xs">
-                  Message From Hon'ble Chief Minister, Goa
-                </h5>
-                <p caption>Dr. Pramod Sawant</p>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section>
-              <p>
-                The Public Works Department plays a major role in the economic,
-                commercial and touristic development of the State of Goa. Being
-                a service Department, it is entrusted with all the developmental
-                activities like Planning, Design, Construction, Operation and
-                Maintenance of all types of construction works in this State of
-                Goa. Following are the programmes which are under the Public
-                Works Department: (1)Building Works : Functional and
-                Non-functional (2) Roads and Bridges. (i) State Programmes.
-                (ii)Centrally Sponsored programmes. (iii) National Highways.
-                (iv) Western Ghat Development programme. (3) Water Supply and
-                Sanitation (i)State Programmes. (ii)Centrally Sponsored
-                programmes. (4) Electrical and Mechanical This includes
-                Government Garage and workshop. In addition to the above, the
-                construction for most of the other Departments, Local Bodies and
-                some of the Autonomous organisations are also executed by the
-                Public Works Department, as Deposit Works. A full-fledged
-                Principal Chief Engineer, who is also the Ex-Officio Additional
-                Secretary to the Government of Goa, having his head quarters at
-                Altinho, Panaji, heads the Public Works Department.
-              </p>
-            </q-card-section>
-          </q-card>
+        <div
+          class="q-pa-md"
+          :class="$q.platform.is.mobile ? 'col-12' : 'col-4'"
+        >
+          <display-links :json-data="importantLinks" />
         </div>
       </div>
     </div>
 
-    <!-- News -->
-    <div
-      :class="$q.platform.is.mobile ? '' : 'q-pa-md'"
-      class="q-pa-md"
-      :style="
-        $q.platform.is.mobile
-          ? ''
-          : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 50px;'
-      "
-    >
-      <div class="row items-start q-gutter-md">
-        <div :class="$q.platform.is.mobile ? 'col-12' : 'col-4'">
-          <q-card class="my-card">
-            <q-item>
-              <q-item-section>
-                <h5 class="q-my-xs">Notice</h5>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section> </q-card-section>
-          </q-card>
-        </div>
-        <div :class="$q.platform.is.mobile ? 'col-12' : 'col-4'">
-          <q-card class="my-card">
-            <q-item>
-              <q-item-section>
-                <h5 class="q-my-xs">Circulars</h5>
-                <div class="row">
-                  <div class="col">
-                    <q-card class="my-card">
-                      <q-card-section>
-                        {{ lorem }}
-                      </q-card-section>
-                    </q-card>
-                  </div>
-                </div>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section> </q-card-section>
-          </q-card>
-        </div>
-        <div :class="$q.platform.is.mobile ? 'col-12' : 'col-3'">
-          <q-card class="my-card">
-            <q-item>
-              <q-item-section>
-                <h5 class="q-my-xs">Contacts</h5>
-              </q-item-section>
-            </q-item>
-            <q-separator inset />
-            <q-card-section> </q-card-section>
-          </q-card>
+    <!-- Noticifications/Circular -->
+    <section class="bg-grey-3 q-py-xl">
+      <!-- style="margin-top: 50px" -->
+      <div
+        :class="$q.platform.is.mobile ? '' : 'q-pa-md'"
+        :style="
+          $q.platform.is.mobile
+            ? ''
+            : 'width: 82vw; margin-left: auto; margin-right: auto;'
+        "
+      >
+        <div class="row">
+          <div class="q-pa-md col-md-4 col-12">
+            <announcement-panel
+              :json-data="importantNotices"
+              style="height: 100%"
+            />
+          </div>
+          <div class="q-pa-md col-md-4 col-12">
+            <announcement-panel
+              :json-data="notifications"
+              style="height: 100%"
+            />
+          </div>
+          <div class="q-pa-md col-md-4 col-12">
+            <announcement-panel
+              :json-data="noticeInvitingTenders"
+              style="height: 100%"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <!-- Recent Work Section-->
+      <detailed-card :jsonData="recentWork" />
+
+      <!-- Schemes Section -->
+      <image-cards :jsonData="schemes" />
+    </section>
+    <!-- InfoDialog -->
+    <!-- <InfoDialog
+      :item="selectedItem"
+      :data="selectedData"
+      v-model="dialogVisible"
+    /> -->
   </q-page>
 </template>
 
 <script>
-import ImageCarousel from "src/components/ImageCarousel.vue";
 import { defineComponent } from "vue";
+import homePageData from "../assets/jsons/homePageData.json";
+import aboutPageData from "../assets/jsons/aboutPageData.json";
+import ImageCarousel from "src/components/ImageCarousel.vue";
+import ImageCardDescription from "src/components/ImageCardDescription.vue";
+import AnnouncementPanel from "src/components/AnnouncementPanel.vue";
+import ImageCard from "src/components/ImageCard.vue";
+import IconCard from "src/components/IconCard.vue";
+import DisplayLinks from "src/components/DisplayLinks.vue";
+// import InfoDialog from "src/components/InfoDialog.vue";
+import ImageCards from "src/components/ImageCards.vue";
+import DetailedCard from "src/components/DetailedCard.vue";
 
 export default defineComponent({
   name: "IndexPage",
   components: {
     ImageCarousel,
+    ImageCardDescription,
+    AnnouncementPanel,
+    ImageCard,
+    IconCard,
+    DisplayLinks,
+    // InfoDialog,
+    ImageCards,
+    DetailedCard,
   },
+  data() {
+    return {
+      homePageData: homePageData,
+      aboutPageData: aboutPageData,
+      // selectedItem: null,
+      // selectedData: null,
+      // dialogVisible: false,
+    };
+  },
+  computed: {
+    mainImageCarousel() {
+      return this.homePageData.MainImageCarousel;
+    },
+    aboutImageCard() {
+      return this.aboutPageData.AboutImageCard;
+    },
+    importantNotices() {
+      return this.homePageData.ImportantNotices;
+    },
+    billPaymentImageCard() {
+      return this.homePageData.BillPaymentImageCard;
+    },
+    billIconCard() {
+      return this.homePageData.BillIconCard;
+    },
+    importantLinks() {
+      return this.homePageData.ImportantLinks;
+    },
+    notifications() {
+      return this.homePageData.Notifications;
+    },
+    noticeInvitingTenders() {
+      return this.homePageData.NoticeInvitingTenders;
+    },
+    recentWork() {
+      return this.homePageData.RecentWork;
+    },
+    schemes() {
+      return this.homePageData.Schemes;
+    },
+  },
+  methods: {},
 });
 </script>
-<style scoped>
-.my-custom-container {
-  margin-left: 20px; /* Adjust the left margin as needed */
-  margin-right: 20px; /* Adjust the right margin as needed */
-}
-</style>
+<style scoped></style>

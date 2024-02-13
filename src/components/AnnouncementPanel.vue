@@ -2,9 +2,26 @@
   <div>
     <q-card
       class="my-card shadow-1"
-      :class="$q.platform.is.mobile ? 'q-mt-md' : 'q-mt-lg'"
+      style="height: 100%"
+      :style="{
+        backgroundColor: jsonData.BackgroundColorCode
+          ? jsonData.BackgroundColorCode
+          : '',
+      }"
+      :class="
+        jsonData.BackgroundColorClass ? jsonData.BackgroundColorClass : ''
+      "
     >
-      <q-card-section class="bg-primary text-white q-py-sm">
+      <!-- :class="$q.platform.is.mobile ? 'q-mt-md' : 'q-mt-lg'" -->
+      <q-card-section
+        class="text-white q-py-sm"
+        :class="bgColorClass"
+        :style="{
+          backgroundColor: jsonData.PrimaryColorCode
+            ? jsonData.PrimaryColorCode
+            : '',
+        }"
+      >
         <div class="text-h6">
           {{ jsonData.SectionTitle }}
         </div>
@@ -16,17 +33,20 @@
             jsonData.SummaryLength
           )"
           :key="index"
-          clickable
-          v-ripple
-          @click="openDialog(item, jsonData)"
         >
-          <!--
-          @click="openDialog(work, recentWork)"
-          -->
+          <!-- clickable
+          v-ripple
+          @click="openDialog(item, jsonData)" -->
           <q-item-section side>
             <q-icon color="" :name="jsonData.BulletIcon" />
           </q-item-section>
-          <q-item-section>
+          <q-item-section
+            class="hoveritem"
+            style="padding: 2px"
+            clickable
+            v-ripple
+            @click="openDialog(item, jsonData)"
+          >
             <q-item-label>
               {{ item.Title }}
               <q-icon
@@ -47,9 +67,15 @@
       <div class="text-center">
         <q-btn
           outline
-          color="primary"
+          :color="jsonData.PrimaryColor ? jsonData.PrimaryColor : ''"
           class="q-mt-sm q-mb-md no-shadow"
-          text-color="primary"
+          :text-color="jsonData.PrimaryColor ? jsonData.PrimaryColor : ''"
+          :style="{
+            backgroundColor: jsonData.PrimaryColorCode
+              ? jsonData.PrimaryColorCode
+              : '',
+            color: jsonData.PrimaryColorCode ? jsonData.PrimaryColorCode : '',
+          }"
           label="View More >>>"
           @click="openDisplayDialog(jsonData)"
         />
@@ -105,6 +131,17 @@ export default {
       this.dialogVisible = true;
     },
   },
+  computed: {
+    bgColorClass() {
+      if (this.jsonData && this.jsonData.PrimaryColor) {
+        return "bg-" + this.jsonData.PrimaryColor;
+      }
+      if (this.jsonData.PrimaryColorCode) {
+        return "";
+      }
+      return "bg-primary";
+    },
+  },
 };
 </script>
 
@@ -113,6 +150,12 @@ export default {
 .blinking-icon {
   color: red;
   animation: blink 1s infinite;
+}
+
+.hoveritem:hover {
+  background-color: rgba(0, 0, 0, 0.12); /* Change background color on hover */
+  cursor: pointer; /* Change cursor on hover */
+  padding: 2px;
 }
 
 /* Animation for new icon blink */
