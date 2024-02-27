@@ -2,267 +2,302 @@
   <q-layout view="lHh lpr lFf" :style="{ fontSize: fontSize }">
     <!-- style="font-size: 160%" -->
     <q-header elevated>
-      <q-toolbar class="bg-white text-black" style="height: 70px !important">
-        <!-- <q-btn flat round dense icon="menu" class="q-mr-sm" /> -->
-        <q-avatar>
-          <img
-            alt="Logo"
-            src="src/assets/government-of-goa-logo.png"
-            class="q-mx-md"
-            style="width: 50px"
-          />
-          <!-- src="./assets/government-of-goa-logo.png" -->
-        </q-avatar>
+      <!-- <q-btn flat round dense icon="menu" class="q-mr-sm" /> -->
+      <!-- <q-toolbar class="bg-white text-black" style="height: 150px">
+        <div class="row full-width">
+          <div class="col-md-6 flex">
+            <img
+              alt="Logo"
+              src="src/assets/government-of-goa-logo.png"
+              class="q-mx-md"
+              style="height: 100px"
+            />
+            <div class="q-ml-sm">
+              <h4 class="text-h4 q-ma-none text-bold">
+                PUBLIC WORKS DEPARTMENT
+              </h4>
+              <p class="text-h6 q-ma-none">Government of Goa</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="float-right">
+              <q-btn
+                class="shadow-none q-mx-xs"
+                size="sm"
+                @click="decreaseFontSize"
+                color="grey-6"
+                round
+              >
+                A-
+              </q-btn>
+              <q-btn
+                size="sm"
+                color="grey-6"
+                @click="resetFontSize"
+                class="shadow-none q-mx-xs"
+                round
+              >
+                A
+              </q-btn>
+              <q-btn
+                color="grey-6"
+                size="sm"
+                @click="increaseFontSize"
+                round
+                class="shadow-none q-mx-xs"
+              >
+                A+
+              </q-btn>
+            </div>
+          </div>
+        </div>
+      </q-toolbar> -->
 
-        <q-toolbar-title>PWD Goa</q-toolbar-title>
-
-        <q-btn
-          color="grey-6"
-          size="sm"
-          class="shadow-none q-mx-xs"
-          @click="decreaseFontSize"
-          >A-</q-btn
-        >
-        <q-btn
-          color="grey-6"
-          size="sm"
-          class="shadow-none q-mx-xs"
-          @click="resetFontSize"
-          >A</q-btn
-        >
-        <q-btn
-          color="grey-6"
-          size="sm"
-          class="shadow-none q-mx-xs"
-          @click="increaseFontSize"
-          >A+</q-btn
-        >
-      </q-toolbar>
-      <q-toolbar class="row justify-between">
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          class="q-mr-md"
-          aria-label="Menu"
-          v-if="$q.platform.is.mobile"
-          @click="toggleLeftDrawer"
-        />
-        <!-- <q-tabs v-model="tab" v-if="!$q.platform.is.mobile" class="q-mx-auto">
-          <q-tab name="home" label="Home" />
-          <q-tab name="aboutus" label="ABOUT US">
-            <q-menu menu-anchor="hover">
-              <q-list>
-                <q-item>
-                  <q-item-label> HISTORY OF PWD Goa</q-item-label>
-                </q-item>
-                <q-item>
-                  <q-item-label>ORGANISATION CHART</q-item-label>
-                </q-item>
-                <q-item>
-                  <q-item-label>CONTACT US</q-item-label>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </q-tab>
-          <q-tab name="schemes" label="SCHEMES">
-            <q-menu menu-anchor="hover" class="hover-menu">
-              <q-list>
-                <q-item>
-                  <q-item-label>BUILDINGS</q-item-label>
-                </q-item>
-                <q-item>
-                  <q-item-label>ROADS & BRIDGES</q-item-label>
-                </q-item>
-                <q-item>
-                  <q-item-label>WATER SUPPLY & SANITATION</q-item-label>
-                </q-item>
-                <q-item>
-                  <q-item-label>NATIONAL HIGHWAY</q-item-label>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </q-tab>
-          <q-tab name="circulars" label="CIRCULARS">
-            <q-menu menu-anchor="hover">
-              <q-list>
-                <q-item>
-                  <q-item-label>ORDERS</q-item-label>
-                </q-item>
-                <q-item>
-                  <q-item-label>CIRCULARS</q-item-label>
-                </q-item>
-                <q-item>
-                  <q-item-label>DOCUMENTS </q-item-label>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </q-tab>
-          <q-tab name="easeofdoingbusiness" label="EASE OF DOING BUSINESS" />
-          <q-tab name="sitemap" label="SITEMAP" />
-          <q-tab name="employeecorner" label="EMPLOYEE CORNER" />
-          <q-tab name="publicgrievance" label="PUBLIC GRIEVANCE" />
-        </q-tabs> -->
-
-        <q-tabs v-if="!$q.platform.is.mobile" class="q-mx-auto">
-          <q-tab
-            v-for="(menuItem, index) in navBarTabs.Data"
-            :key="index"
-            :label="menuItem.Label"
-            @click="handleNavigation(menuItem)"
+      <q-toolbar
+        class="bg-white text-black"
+        :style="{
+          height: $q.screen.gt.sm ? '150px' : $q.screen.lt.md ? '100px' : '',
+        }"
+      >
+        <div class="row full-width">
+          <div class="col-md-6 flex">
+            <img
+              alt="Logo"
+              src="src/assets/government-of-goa-logo.png"
+              class="q-mx-md"
+              :style="{
+                height: $q.screen.gt.sm
+                  ? '100px'
+                  : $q.screen.lt.md
+                  ? '80px'
+                  : '',
+              }"
+            />
+            <!-- :style="height: 80px" -->
+            <div class="q-ml-sm">
+              <p
+                class="q-ma-none text-bold"
+                :class="{
+                  'text-h4': $q.screen.gt.sm,
+                  '': $q.screen.lt.md,
+                }"
+              >
+                PUBLIC WORKS DEPARTMENT
+              </p>
+              <p
+                class="q-ma-none"
+                :class="{
+                  'text-h6': $q.screen.gt.sm,
+                  '': $q.screen.lt.md,
+                }"
+              >
+                Government of Goa
+              </p>
+            </div>
+          </div>
+          <!-- -->
+          <div
+            class="col-md-6"
+            :class="{
+              '': $q.screen.gt.sm,
+              'full-width': $q.screen.lt.md,
+            }"
           >
-            <!-- @click="$router.push({ path: 'about-us' })" -->
-            <q-menu v-if="menuItem.SubMenu" menu-anchor="hover">
-              <q-list>
-                <q-item
-                  v-for="(subItem, subIndex) in menuItem.SubMenu"
-                  :key="subIndex"
-                >
-                  <q-item-label>{{ subItem.Label }}</q-item-label>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </q-tab>
-        </q-tabs>
-        <div class="q-px-xl"></div>
+            <div
+              class="float-right d-flex align-items-center justify-content-center gt-sm"
+            >
+              <q-btn
+                class="shadow-none q-mx-xs"
+                size="sm"
+                @click="decreaseFontSize"
+                color="grey-6"
+                round
+              >
+                A-
+              </q-btn>
+              <q-btn
+                size="sm"
+                color="grey-6"
+                @click="resetFontSize"
+                class="shadow-none q-mx-xs"
+                round
+              >
+                A
+              </q-btn>
+              <q-btn
+                color="grey-6"
+                size="sm"
+                @click="increaseFontSize"
+                round
+                class="shadow-none q-mx-xs"
+              >
+                A+
+              </q-btn>
+            </div>
+          </div>
+        </div>
+      </q-toolbar>
+      <!-- <q-toggle v-model="darkMode" label="Dark Mode" color="primary" /> -->
+      <q-toolbar class="row justify-between">
+        <!-- v-if="$q.platform.is.mobile" -->
+        <div class="justify-between lt-md" style="width: 100%">
+          <q-btn
+            flat
+            dense
+            round
+            icon="menu"
+            class="q-mr-md"
+            aria-label="Menu"
+            @click="toggleLeftDrawer"
+          />
+
+          <div class="float-right">
+            <q-btn
+              class="shadow-none q-mx-xs text-grey-9"
+              size="sm"
+              @click="decreaseFontSize"
+              color="grey-2"
+              round
+            >
+              A-
+            </q-btn>
+            <q-btn
+              size="sm"
+              color="grey-2"
+              @click="resetFontSize"
+              class="shadow-none q-mx-xs text-grey-9"
+              round
+            >
+              A
+            </q-btn>
+            <q-btn
+              color="grey-2"
+              size="sm"
+              @click="increaseFontSize"
+              round
+              class="shadow-none q-mx-xs text-grey-9"
+            >
+              A+
+            </q-btn>
+          </div>
+        </div>
+
+        <div class="gt-sm"></div>
+        <div>
+          <q-btn-group class="gt-sm" flat stretch>
+            <template
+              v-for="(menuItem, index) in navBarTabs.Data"
+              :key="'menu-' + index"
+            >
+              <q-btn-dropdown
+                v-if="menuItem.SubMenu && menuItem.SubMenu.length > 0"
+                color="primary"
+                :label="menuItem.Label"
+              >
+                <q-list>
+                  <template
+                    v-for="(subItem, subIndex) in menuItem.SubMenu"
+                    :key="'submenu-' + subIndex"
+                  >
+                    <q-item
+                      clickable
+                      v-close-popup
+                      @click="handleNavigation(subItem)"
+                    >
+                      <q-item-section>
+                        <q-item-label>{{ subItem.Label }}</q-item-label>
+                      </q-item-section>
+                    </q-item>
+                  </template>
+                </q-list>
+              </q-btn-dropdown>
+              <q-btn
+                v-else
+                :label="menuItem.Label"
+                @click="handleNavigation(menuItem)"
+                :key="'button-' + index"
+              />
+            </template>
+          </q-btn-group>
+        </div>
+        <div class=""></div>
       </q-toolbar>
     </q-header>
 
-    <!-- :width="200"
-      :breakpoint="500" -->
-    <!-- <q-drawer v-model="leftDrawerOpen" show-if-above>
-      <q-scroll-area class="fit">
-        <q-list padding class="menu-list">
-          <q-item active clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="home" />
-            </q-item-section>
-
-            <q-item-section> Home </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="info" />
-            </q-item-section>
-
-            <q-item-section> About Us </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="receipt_long" />
-            </q-item-section>
-
-            <q-item-section> Schemes </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="text_snippet" />
-            </q-item-section>
-
-            <q-item-section> Circulars </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="map" />
-            </q-item-section>
-
-            <q-item-section> Sitemap </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="assignment_ind" />
-            </q-item-section>
-
-            <q-item-section> Employee Corner </q-item-section>
-          </q-item>
-
-          <q-item clickable v-ripple>
-            <q-item-section avatar>
-              <q-icon name="public" />
-            </q-item-section>
-
-            <q-item-section> Public Grievance </q-item-section>
-          </q-item>
-        </q-list>
-      </q-scroll-area>
-    </q-drawer> -->
-
-    <!-- <q-drawer v-model="leftDrawerOpen" show-if-above>
-      <q-scroll-area class="fit">
-        <q-list padding class="menu-list" seperator>
-          <q-item
+    <!-- Side Bar -->
+    <!-- class="lt-md" show-if-above-->
+    <q-drawer v-model="leftDrawerOpen">
+      <q-scroll-area
+        style="
+          height: calc(100% - 150px);
+          margin-top: 150px;
+          border-right: 1px solid #ddd;
+        "
+      >
+        <q-list padding>
+          <template
             v-for="(menuItem, index) in navBarTabs.Data"
-            :key="index"
-            clickable
-            v-ripple
-            @click="handleNavigation(menuItem)"
+            :key="'menu-' + index"
           >
-            <q-item-section avatar>
-              <q-icon :name="menuItem.Icon" />
-            </q-item-section>
-            <q-item-section> {{ menuItem.Label }} </q-item-section>
-            <q-item v-if="menuItem.Submenu">
-              <q-item-section>
-                <q-icon name="arrow_drop_down" />
-              </q-item-section>
-            </q-item>
-            <q-menu v-if="menuItem.Submenu" menu-anchor="hover">
-              <q-list>
-                <q-item
-                  v-for="(subItem, subIndex) in menuItem.Submenu"
-                  :key="subIndex"
-                >
-                  <q-item-label>{{ subItem.Label }}</q-item-label>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </q-item>
-        </q-list>
-      </q-scroll-area>
-    </q-drawer> -->
+            <q-expansion-item
+              v-if="menuItem.SubMenu && menuItem.SubMenu.length > 0"
+              group="somegroup"
+              expand-separator
+            >
+              <template v-slot:header>
+                <q-item-section avatar>
+                  <q-icon color="grey-10" :name="menuItem.Icon" />
+                </q-item-section>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above>
-      <q-scroll-area class="fit">
-        <q-list padding class="menu-list" separator>
-          <q-item
-            v-for="(menuItem, index) in navBarTabs.Data"
-            :key="index"
-            clickable
-            v-ripple
-            @click="handleNavigation(menuItem)"
-          >
-            <q-item-section avatar>
-              <q-icon :name="menuItem.Icon" />
-            </q-item-section>
-            <q-item-section> {{ menuItem.Label }} </q-item-section>
-            <q-item v-if="menuItem.SubMenu">
-              <q-item-section>
-                <q-icon name="arrow_drop_down" />
-              </q-item-section>
-            </q-item>
-            <q-menu v-if="menuItem.SubMenu" menu-anchor="hover">
-              <q-list>
-                <q-item
-                  v-for="(subItem, subIndex) in menuItem.SubMenu"
-                  :key="subIndex"
-                  clickable
-                  v-ripple
-                  @click="handleNavigation(subItem)"
-                >
-                  <q-item-label>{{ subItem.Label }}</q-item-label>
+                <q-item-section class="text-uppercase">
+                  {{ menuItem.Label }}
+                </q-item-section>
+              </template>
+              <q-separator />
+
+              <template
+                v-for="(subItem, subIndex) in menuItem.SubMenu"
+                :key="'submenu-' + subIndex"
+              >
+                <q-item clickable v-ripple @click="handleNavigation(subItem)">
+                  <q-item-section class="q-pl-lg">{{
+                    subItem.Label
+                  }}</q-item-section>
                 </q-item>
-              </q-list>
-            </q-menu>
-          </q-item>
+              </template>
+            </q-expansion-item>
+            <q-item
+              v-else
+              clickable
+              v-ripple
+              @click="handleNavigation(menuItem)"
+            >
+              <q-item-section avatar>
+                <q-icon color="grey-10" :name="menuItem.Icon" />
+              </q-item-section>
+              <q-item-section class="text-uppercase">{{
+                menuItem.Label
+              }}</q-item-section>
+            </q-item>
+          </template>
         </q-list>
       </q-scroll-area>
+
+      <q-img
+        class="absolute-top"
+        src="https://cdn.quasar.dev/img/material.png"
+        style="height: 150px"
+      >
+        <div class="absolute-bottom bg-transparent">
+          <!-- <q-avatar size="56px" class="q-mb-sm">
+            <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
+          </q-avatar> -->
+          <!-- <div class="text-weight-bold">Razvan Stoenescu</div>
+          <div>@rstoenescu</div> -->
+        </div>
+      </q-img>
     </q-drawer>
+
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -284,42 +319,7 @@ export default {
       leftDrawerOpen: false,
       generalStore,
       mainLayoutData: mainLayoutData,
-
-      menu: [
-        { name: "home", label: "Home" },
-        {
-          name: "aboutus",
-          label: "ABOUT US",
-          submenu: [
-            { label: "HISTORY OF PWD Goa" },
-            { label: "ORGANISATION CHART" },
-            { label: "CONTACT US" },
-          ],
-        },
-        {
-          name: "schemes",
-          label: "SCHEMES",
-          submenu: [
-            { label: "BUILDINGS" },
-            { label: "ROADS & BRIDGES" },
-            { label: "WATER SUPPLY & SANITATION" },
-            { label: "NATIONAL HIGHWAY" },
-          ],
-        },
-        {
-          name: "circulars",
-          label: "CIRCULARS",
-          submenu: [
-            { label: "ORDERS" },
-            { label: "CIRCULARS" },
-            { label: "DOCUMENTS" },
-          ],
-        },
-        { name: "easeofdoingbusiness", label: "EASE OF DOING BUSINESS" },
-        { name: "sitemap", label: "SITEMAP" },
-        { name: "employeecorner", label: "EMPLOYEE CORNER" },
-        { name: "publicgrievance", label: "PUBLIC GRIEVANCE" },
-      ],
+      darkMode: false,
     };
   },
   computed: {
@@ -356,6 +356,11 @@ export default {
         // Navigate to external link if Link attribute exists
         window.open(menuItem.Link, "_blank");
       }
+    },
+  },
+  watch: {
+    darkMode(newDarkMode) {
+      this.$q.dark.set(newDarkMode);
     },
   },
 

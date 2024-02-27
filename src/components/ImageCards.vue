@@ -1,7 +1,7 @@
 <template>
   <section class="" style="padding-bottom: 50px; padding-top: 40px">
     <h4
-      :class="$q.platform.is.mobile ? 'text-h6' : 'text-h5'"
+      :class="$q.screen.lt.md ? 'text-h6' : 'text-h5'"
       class="text-bold text-center text-uppercase"
     >
       {{ jsonData.SectionTitle }}
@@ -10,7 +10,7 @@
       class=""
       style="margin-top: 50px"
       :style="
-        $q.platform.is.mobile
+        $q.screen.lt.md
           ? ''
           : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 50px;'
       "
@@ -75,8 +75,18 @@ export default {
   },
   mounted() {
     this.cardWidth = document.querySelector(".item-card").clientWidth;
+    window.addEventListener("resize", this.updateCardWidth);
   },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.updateCardWidth);
+  },
+  // mounted() {
+  //   this.cardWidth = document.querySelector(".item-card").clientWidth;
+  // },
   methods: {
+    updateCardWidth() {
+      this.cardWidth = document.querySelector(".item-card").clientWidth;
+    },
     openDialog(item, data) {
       this.selectedItem = item;
       this.selectedData = data;

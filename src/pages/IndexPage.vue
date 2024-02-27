@@ -3,10 +3,10 @@
     <ImageCarousel :jsonData="mainImageCarousel" />
 
     <div
-      :class="$q.platform.is.mobile ? '' : 'q-pa-md'"
+      :class="$q.screen.lt.md ? '' : 'q-pa-md'"
       style="margin-top: 50px"
       :style="
-        $q.platform.is.mobile
+        $q.screen.lt.md
           ? ''
           : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 50px;'
       "
@@ -14,10 +14,7 @@
       <!-- Main Structure 8-4 -->
       <div class="row">
         <!-- Main Structure 8 -->
-        <div
-          class="q-pa-md"
-          :class="$q.platform.is.mobile ? 'col-12' : 'col-8'"
-        >
+        <div class="q-pa-md" :class="$q.screen.lt.md ? 'col-12' : 'col-8'">
           <image-card-description :jsonData="aboutImageCard" />
 
           <div class="row q-mt-md" style="">
@@ -25,7 +22,7 @@
               class="col-md-6 col-12"
               :class="{ 'q-pr-sm': !$q.screen.lt.md }"
             >
-              <image-card :jsonData="billPaymentImageCard" />
+              <image-card :jsonData="swachhBharatMissionImageCard" />
             </div>
             <div
               class="col-md-6 col-12"
@@ -38,10 +35,7 @@
             </div>
           </div>
         </div>
-        <div
-          class="q-pa-md"
-          :class="$q.platform.is.mobile ? 'col-12' : 'col-4'"
-        >
+        <div class="q-pa-md" :class="$q.screen.lt.md ? 'col-12' : 'col-4'">
           <display-links :json-data="importantLinks" />
         </div>
       </div>
@@ -51,9 +45,9 @@
     <section class="bg-grey-3 q-py-xl">
       <!-- style="margin-top: 50px" -->
       <div
-        :class="$q.platform.is.mobile ? '' : 'q-pa-md'"
+        :class="$q.screen.lt.md ? '' : 'q-pa-md'"
         :style="
-          $q.platform.is.mobile
+          $q.screen.lt.md
             ? ''
             : 'width: 82vw; margin-left: auto; margin-right: auto;'
         "
@@ -142,8 +136,8 @@ export default defineComponent({
     importantNotices() {
       return this.homePageData.ImportantNotices;
     },
-    billPaymentImageCard() {
-      return this.homePageData.BillPaymentImageCard;
+    swachhBharatMissionImageCard() {
+      return this.homePageData.SwachhBharatMissionImageCard;
     },
     billIconCard() {
       return this.homePageData.BillIconCard;

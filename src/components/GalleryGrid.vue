@@ -11,7 +11,7 @@
           :src="item.Image"
           v-if="item.Image"
           fit="cover"
-          :style="{ height: $q.platform.is.mobile ? '170px' : '300px' }"
+          :style="{ height: $q.screen.lt.md ? '170px' : '300px' }"
         >
           <div class="absolute-bottom text-center">
             {{ item.Title }}
@@ -23,7 +23,7 @@
             frameborder="0"
             allowfullscreen
             style="width: 100%"
-            :style="{ height: $q.platform.is.mobile ? '170px' : '300px' }"
+            :style="{ height: $q.screen.lt.md ? '170px' : '300px' }"
           >
             <div class="absolute-bottom text-center">
               {{ item.Title }}

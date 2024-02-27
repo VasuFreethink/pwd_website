@@ -1,13 +1,13 @@
 <template>
   <section class="bg-primary" style="padding-bottom: 50px; padding-top: 1px">
     <h4
-      :class="$q.platform.is.mobile ? 'text-h5' : 'text-h5'"
+      :class="$q.screen.lt.md ? 'text-h5' : 'text-h5'"
       class="text-bold text-center text-white text-uppercase"
     >
       {{ jsonData.SectionTitle }}
     </h4>
     <div
-      v-if="!$q.platform.is.mobile"
+      v-if="!$q.screen.lt.md"
       class=""
       style="
         width: 82vw;
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <div v-if="$q.platform.is.mobile">
+    <div v-if="$q.screen.lt.md">
       <q-carousel
         v-model="slide"
         transition-prev="slide-right"

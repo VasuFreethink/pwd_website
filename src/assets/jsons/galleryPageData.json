@@ -3,32 +3,8 @@
     "SectionTitle": "Water Supply Gallery",
     "Data": [
       {
-        "Title": "BUILDINGS",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
-      },
-      {
-        "Title": "ROADS & BRIDGES",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
-      },
-      {
-        "Title": "WATER SUPPLY & SANITATION",
-        "Image": "https://via.placeholder.com/400"
-      },
-      {
-        "Title": "NATIONAL HIGHWAY",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
-      },
-      {
-        "Title": "NATIONAL HIGHWAY",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
-      },
-      {
-        "Title": "WATER SUPPLY & SANITATION",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
-      },
-      {
-        "Title": "ROADS & BRIDGES",
-        "Video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "Title": "Water Treatment Plant",
+        "Image": "src/assets/watertreatmeant.ppm"
       }
     ]
   },
@@ -36,20 +12,12 @@
     "SectionTitle": "Roads Gallery",
     "Data": [
       {
-        "Title": "WATER SUPPLY & SANITATION",
-        "Image": "https://via.placeholder.com/400"
+        "Title": "Roads",
+        "Image": "src/assets/roads.jpg"
       },
       {
         "Title": "NATIONAL HIGHWAY",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
-      },
-      {
-        "Title": "NATIONAL HIGHWAY",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
-      },
-      {
-        "Title": "WATER SUPPLY & SANITATION",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
+        "Image": "src/assets/roads1.jpg"
       }
     ]
   },
@@ -57,24 +25,8 @@
     "SectionTitle": "Bridges Gallery",
     "Data": [
       {
-        "Title": "BUILDINGS",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
-      },
-      {
         "Title": "ROADS & BRIDGES",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
-      },
-      {
-        "Title": "NATIONAL HIGHWAY",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
-      },
-      {
-        "Title": "WATER SUPPLY & SANITATION",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
-      },
-      {
-        "Title": "ROADS & BRIDGES",
-        "Video": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "Image": "src/assets/road_bridges.jpg"
       }
     ]
   },
@@ -84,17 +36,17 @@
       {
         "Title": "Roads",
         "Name": "GalleryRoads",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
+        "Image": "src/assets/roads.jpg"
       },
       {
         "Title": "Bridges",
         "Name": "GalleryBridges",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/road_bridges.jpg"
       },
       {
         "Title": "Water Supply",
         "Name": "GalleryWaterSupply",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
+        "Image": "src/assets/watertreatmeant.ppm"
       }
     ]
   }

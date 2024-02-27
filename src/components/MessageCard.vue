@@ -1,7 +1,7 @@
 <template>
   <q-card
     class="my-card shadow-1"
-    :class="$q.platform.is.mobile ? 'q-mt-md' : 'q-mt-lg'"
+    :class="$q.screen.lt.md ? 'q-mt-md' : 'q-mt-lg'"
   >
     <q-item>
       <q-item-section avatar>

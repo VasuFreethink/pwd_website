@@ -33,7 +33,7 @@
             "Value": "05/08/2014"
           }
         ],
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/roads.jpg"
       },
       {
         "Title": "Outdoor Basketball Court of Goa Salesian Society Don Bosco College, Panaji",
@@ -65,19 +65,19 @@
             "Value": "05/08/2014"
           }
         ],
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/download.jpeg"
       },
       {
-        "Title": "Roads",
-        "Description": "Providing crash barriers bet.km.84/00 to km.95/00(ghat section)km.119/800 to km.121/00 and km.128/00 to km.136/00(selected stretches)in the state of Goa.",
+        "Title": "POLICE STATION AT TALEIGAO",
+        "Description": "It is a newly built Police outpost for Taleigao Constituency",
         "DisplayDescription": false,
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/ps.jpeg"
       },
       {
-        "Title": "Roads",
+        "Title": "Crash Barriers",
         "Description": "Providing crash barriers bet.km.84/00 to km.95/00(ghat section)km.119/800 to km.121/00 and km.128/00 to km.136/00(selected stretches)in the state of Goa.",
         "DisplayDescription": true,
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/roads.jpg"
       }
     ]
   },
@@ -291,7 +291,7 @@
     "Data": [
       {
         "Title": "BUILDINGS",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg",
+        "Image": "src/assets/buildings.jpg",
         "Description": "The works completed up to 31st December 2020 are as follows: \n Beautification of the area near Kelbai Temple at Kudne village in Sanquelim Constituency at a cost of Rs. 14.19 lakhs. Laying of Pavers for crematorium including other miscellaneous works at Pajwada in Ward No. 09 in Bicholim Constituency at a cost of Rs. 14.79 lakhs. Construction of Community hall along with seater Toilet in Ward No. 108/26 and Ward No. 111 at Khodgini Surla in Bicholim Taluka at a cost of Rs. 34.05 lakhs. Construction of shed and other works in sy no. 61 Shri Kelbai Devasthan Gaonkarwada Mulgao in Bicholim at a cost of Rs. 24.89 lakhs. Construction of Ganpati shed and Beautification of surrounding area and construction of retaining wall at Patto Gaonkarwada, Narva Bicholim at a cost of Rs. 32.42 lakhs. Proposed beautification work of Kranti Maidan in Ponda-Goa-S.H.-Artist Work at a cost of Rs. 61.11 lakhs.",
         "DisplayDescription": true,
         "Button": true,
@@ -302,7 +302,7 @@
       },
       {
         "Title": "ROADS & BRIDGES",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg",
+        "Image": "src/assets/road_bridges.jpg",
         "Description": "The works completed up to 31st December 2020 are as follows: \n Beautification of the area near Kelbai Temple at Kudne village in Sanquelim Constituency at a cost of Rs. 14.19 lakhs. Laying of Pavers for crematorium including other miscellaneous works at Pajwada in Ward No. 09 in Bicholim Constituency at a cost of Rs. 14.79 lakhs. Construction of Community hall along with seater Toilet in Ward No. 108/26 and Ward No. 111 at Khodgini Surla in Bicholim Taluka at a cost of Rs. 34.05 lakhs. Construction of shed and other works in sy no. 61 Shri Kelbai Devasthan Gaonkarwada Mulgao in Bicholim at a cost of Rs. 24.89 lakhs. Construction of Ganpati shed and Beautification of surrounding area and construction of retaining wall at Patto Gaonkarwada, Narva Bicholim at a cost of Rs. 32.42 lakhs. Proposed beautification work of Kranti Maidan in Ponda-Goa-S.H.-Artist Work at a cost of Rs. 61.11 lakhs.",
         "DisplayDescription": true,
         "Button": true,
@@ -311,20 +311,20 @@
       },
       {
         "Title": "WATER SUPPLY & SANITATION",
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
+        "Image": "src/assets/watertreatmeant.ppm"
       },
       {
         "Title": "NATIONAL HIGHWAY",
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/roads1.jpg"
       }
     ]
   },
-  "BillPaymentImageCard": {
-    "SectionTitle": "Bill Payment",
+  "SwachhBharatMissionImageCard": {
+    "SectionTitle": "Swachh Bharat Mission",
     "SectionType": "ImageCard",
     "Data": {
-      "Image": "https://cdn.quasar.dev/img/parallax2.jpg",
-      "Link": "https://goaonline.gov.in/Appln/UIL/DeptServices?__DocId=PWD&__ServiceId=PWD01",
+      "Image": "src/assets/SwacchBharat_logo.jpg",
+      "Link": "https://sbmurban.org/",
       "OpenInNewTab": true
     }
   },
@@ -359,16 +359,19 @@
     "AutoPlay": true,
     "Data": [
       {
-        "Image": "https://cdn.quasar.dev/img/parallax1.jpg"
+        "Image": "src/assets/home_hero_0.jpg"
       },
       {
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/home_hero_1.jpg"
       },
       {
-        "Image": "https://cdn.quasar.dev/img/mountains.jpg"
+        "Image": "src/assets/home_hero_2.jpg"
       },
       {
-        "Image": "https://cdn.quasar.dev/img/parallax2.jpg"
+        "Image": "src/assets/home_hero_3.jpg"
+      },
+      {
+        "Image": "src/assets/home_hero_4.jpg"
       }
     ]
   }
