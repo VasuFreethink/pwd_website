@@ -32,6 +32,17 @@ const routes = [
     ],
   },
   {
+    path: "/contact-us",
+    name: "ContactUs",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "",
+        component: () => import("pages/ContactPage.vue"),
+      },
+    ],
+  },
+  {
     path: "/json",
     component: () => import("layouts/MainLayout.vue"),
     children: [{ path: "", component: () => import("pages/JsonEditor.vue") }],

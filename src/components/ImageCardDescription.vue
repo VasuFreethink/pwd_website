@@ -12,9 +12,16 @@
       <div class="col-12 col-md-4 q-pa-md">
         <q-card class="my-card image-card">
           <q-parallax
+            v-if="jsonData.ShowParallax"
             :src="jsonData.Image"
             :style="{ height: cardWidth + 'px' }"
           />
+          <q-img
+            v-else
+            :src="jsonData.Image"
+            :style="{ height: cardWidth + 'px' }"
+            fit="cover"
+          ></q-img>
         </q-card>
       </div>
       <div class="col-12 col-md-8 q-pa-md">

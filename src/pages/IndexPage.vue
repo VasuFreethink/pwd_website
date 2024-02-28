@@ -60,10 +60,11 @@
             />
           </div>
           <div class="q-pa-md col-md-4 col-12">
-            <announcement-panel
+            <!-- <announcement-panel
               :json-data="notifications"
               style="height: 100%"
-            />
+            /> -->
+            <announcement-panel :json-data="circulars" style="height: 100%" />
           </div>
           <div class="q-pa-md col-md-4 col-12">
             <announcement-panel
@@ -135,6 +136,9 @@ export default defineComponent({
     },
     importantNotices() {
       return this.homePageData.ImportantNotices;
+    },
+    circulars() {
+      return this.homePageData.Circulars;
     },
     swachhBharatMissionImageCard() {
       return this.homePageData.SwachhBharatMissionImageCard;

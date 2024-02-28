@@ -105,7 +105,7 @@
                 style="padding: 2px"
                 clickable
                 v-ripple
-                @click="openDialog(item, jsonData)"
+                @click="openDialog(item, data)"
               >
                 <q-item-label>
                   {{ item.Title }}
@@ -164,9 +164,9 @@ export default {
     closeDialog() {
       this.$emit("update:value", false); // Emit the update:value event to update the value prop
     },
-    openDialog(item, data) {
+    openDialog(item, data1) {
       this.selectedItem = item;
-      this.selectedData = data;
+      this.selectedData = data1;
       this.dialogVisible = true;
     },
   },

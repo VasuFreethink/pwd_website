@@ -57,24 +57,17 @@
           <div v-if="item.Details && item.Details.length > 0" class="q-my-md">
             <div v-for="(detail, index) in item.Details" :key="index">
               <p class="text-justify">
-                <strong>{{ detail.Name }}:</strong> {{ detail.Value }}
+                <strong
+                  >{{ detail.Name }}
+                  <span v-if="detail.Name && detail.Value">:</span></strong
+                >
+                {{ detail.Value }}
               </p>
             </div>
           </div>
         </q-page>
       </q-page-container>
       <q-footer class="text-right bg-white">
-        <!-- Download Button -->
-        <q-btn
-          v-if="item.DownloadButton"
-          class="q-my-sm q-mx-sm shadow-none"
-          color="primary"
-          icon="download"
-          label="Download"
-          size="md"
-          @click="downloadItem"
-        />
-
         <!-- Button -->
         <q-btn
           :outline="item.ButtonDesignType === 'outline'"
@@ -85,7 +78,18 @@
           :icon="item.ButtonIcon"
           :label="item.ButtonLabel"
           size="md"
-          @click="callFunction(item.ButtonFunction)"
+          @click="callFunction(item.ButtonFunction, item)"
+        />
+
+        <!-- Download Button -->
+        <q-btn
+          v-if="item.DownloadButton"
+          class="q-my-sm q-mx-sm shadow-none"
+          color="primary"
+          icon="download"
+          label="Download"
+          size="md"
+          @click="downloadItem(item)"
         />
       </q-footer>
     </q-layout>
@@ -125,15 +129,33 @@ export default {
       this.$emit("update:value", false); // Emit the update:value event to update the value prop
     },
     //Main function to call other function based on config
-    callFunction(funcName) {
+    callFunction(funcName, item) {
       if (typeof this[funcName] === "function") {
-        this[funcName]();
+        this[funcName](item);
       } else {
         console.error(`Function "${funcName}" does not exist.`);
       }
     },
     applyForScheme() {
       console.log("APPLY FOR SCHEME");
+    },
+    downloadItem(item) {
+      // Download;
+      if (item.DownloadLink) {
+        const downloadLink = item.DownloadLink;
+        const anchor = document.createElement("a");
+        anchor.href = downloadLink;
+        anchor.setAttribute("download", ""); // This attribute ensures the file is downloaded instead of opened
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+      }
+    },
+    viewFile(item) {
+      // VIEW IN NEW TAB
+      if (item.DownloadLink) {
+        window.open(item.DownloadLink, "_blank");
+      }
     },
   },
 };

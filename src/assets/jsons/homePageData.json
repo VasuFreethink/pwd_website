@@ -89,49 +89,88 @@
     "PrimaryColor": "primary",
     "Data": [
       {
-        "Title": "Instructions To Candidates called for Physical Test.",
-        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "Instructions To Candidates called for Verification of Documents.",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/Instruction_for_Verification_of_documents.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": true
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Students called for Verification of Documents.",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "List of Candidates Called for Verification of Documents, TA MechElec",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/TAMechElec.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": true
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Candidates called for Physical Test.",
-        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "List of Candidates Called for Verification of Documents, TA Mining",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/TAMining.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Students called for Verification of Documents.",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "List of Candidates Called for Verification of Documents, TA Comp/Elec/IT",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/TACompEleIT.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Candidates called for Physical Test.",
-        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "List of Candidates Called for Verification of Documents, TA Civil.",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/TACivil.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Students called for Verification of Documents.",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "List of Candidates Called for Verification of Documents, JE Mech/Ele",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/JEMechElec.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
+      },
+      {
+        "Title": "List of Candidates Called for Verification of Documents, JE Comp/Ele/IT",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/JECompEleIT.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       }
     ]
   },
@@ -189,6 +228,87 @@
       }
     ]
   },
+  "Circulars": {
+    "SectionTitle": "Circulars",
+    "SectionType": "announcements",
+    "BulletIcon": "keyboard_double_arrow_right",
+    "SummaryLength": 4,
+    "PrimaryColor": "primary",
+    "Data": [
+      {
+        "Title": "Circular - Standard Guidelines for Hiring of Vehicles at various offices in PWD",
+        "Description": "Circular Number: No.1-8-05/SSW-PWD/Vol-I/2017-18/851",
+        "DownloadLink": "src/assets/files/Circulars/circular.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
+      },
+      {
+        "Title": "Circular - Consumer Price Index Numbers for industrial workers on base 2001=100",
+        "Description": "Circular Number: No.112/1/2017-CPI",
+        "DownloadLink": "src/assets/files/Circulars/Cicular1.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
+      },
+      {
+        "Title": "Circular- Office Memorandum ( General Admn. Department)",
+        "Description": "Circular Number: No.11/1/2017-GAD/28",
+        "DownloadLink": "src/assets/files/Circulars/circular2.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
+      },
+      {
+        "Title": "2. Applicability of Goods and services Tax (GST) on works contracts in Government department Instructions on billings, payment and rates reg.",
+        "Description": "No. 38/5/2017 - Fin. ( R&C;) dt. 6/11/2017",
+        "DownloadLink": "src/assets/files/Circulars/GST2circular.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
+      },
+      {
+        "Title": "1. Applicability of Goods and services Tax (GST) on supplies of goods and services in Govt. Dept. Instructions on billings, payment and rates reg.",
+        "Description": "No. 38/5/2017 - Fin. ( R&C;) dt.12/10/2017",
+        "DownloadLink": "src/assets/files/Circulars/GST.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
+      },
+      {
+        "Title": "GAD-II Circular",
+        "Description": "NO.4/32/2013-GAD-II",
+        "DownloadLink": "src/assets/files/Circulars/GST2circular.pdf",
+        "DownloadButton": true,
+        "DisplayDescription": true,
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
+      }
+    ]
+  },
   "NoticeInvitingTenders": {
     "SectionTitle": "Notice Inviting Tenders",
     "SectionType": "announcements",
@@ -197,49 +317,76 @@
     "PrimaryColor": "primary",
     "Data": [
       {
-        "Title": "Instructions To Candidates called for Physical Test.",
-        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "PWD/WDXVII/PHE.N / ASW / F.29/ 16 /2022-23, Dated : 07/06/2022",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/NoticeInvitingTenders/PWD-WDXVII-PHE.N-ASW-F.29-16-2022-23.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": true
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Students called for Verification of Documents.",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "PWD/WDXVII/PHE.N/ASW/F.29/15/2022-23, Dated : 07/06/2022",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/NoticeInvitingTenders/15.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Candidates called for Physical Test.",
-        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "PWD/WDXVII/PHE.N / ASW / F.29/11/2022-23",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo11.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Students called for Verification of Documents.",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "PWD/WDXVII/PHE.N / ASW / F.29/09/2022-23",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo9.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": true,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Candidates called for Physical Test.",
-        "Description": "Dear Candidate, Congratulations on successfully clearing the initial screening process! We are pleased to inform you that you have been selected to proceed to the next stage of the recruitment process, which involves a Physical Test. The Physical Test is a crucial step in our evaluation process and will assess your physical fitness, endurance, and ability to perform tasks relevant to the role you've applied for. It is essential to come prepared both mentally and physically to demonstrate your capabilities effectively. Here are some important instructions for the Physical Test: Date and Time: Please report to the designated venue on [date] at [time]. Ensure that you arrive punctually to avoid any delays. Dress Code: Wear appropriate athletic attire, including comfortable sports shoes and clothing suitable for physical activities. Required Documents: Bring along a government-issued identification document (such as a driver's license or passport) for verification purposes. Hydration and Nutrition: Stay hydrated and have a light meal before the test to maintain your energy levels throughout the session. Follow Instructions: Pay close attention to the instructions provided by the test coordinators and follow them diligently. Safety First: Prioritize your safety during the test. Inform the organizers immediately if you experience any discomfort or require assistance. We wish you the best of luck for the Physical Test! Your dedication and commitment are greatly appreciated, and we look forward to seeing you showcase your potential. Best regards",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "PWD/WDXVII/PHE.N / ASW / F.29/07/2022-23",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo07.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       },
       {
-        "Title": "Instructions To Students called for Verification of Documents.",
-        "DownloadLink": "https:test.in/download_link.pdf",
+        "Title": "QuotationNo.4",
+        "Description": "Download Attached Doc",
+        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo.4.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
-        "NewIcon": false
+        "NewIcon": false,
+        "Button": true,
+        "ButtonLabel": "View",
+        "ButtonFunction": "viewFile",
+        "ButtonIcon": "visibility"
       }
     ]
   },
@@ -258,8 +405,9 @@
       },
       {
         "Name": "ABOUT THE PORTAL",
-        "Link": "https:test.in/download_link.pdf",
-        "LinkIcon": "link"
+        "LinkIcon": "link",
+        "OpenInfoDialog": true,
+        "DataSource": "AboutThePortal"
       },
       {
         "Name": "RELATED LINKS",
@@ -328,7 +476,6 @@
       "OpenInNewTab": true
     }
   },
-
   "BillIconCard": {
     "SectionTitle": "Bill Payment",
     "SectionType": "IconCard",

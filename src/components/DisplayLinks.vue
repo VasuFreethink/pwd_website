@@ -31,7 +31,6 @@
             clickable
             v-ripple
           >
-            <!-- v-for="(item, index) in jsonData.Data" -->
             <q-card-section class="q-pa-none">
               <q-item>
                 <q-item-section avatar>
@@ -42,11 +41,27 @@
                 <q-item-section>
                   <q-item-label>
                     <a
+                      v-if="item.Link"
                       :href="item.Link"
                       class="text-subtitle1"
                       style="text-decoration: none; color: inherit"
                       >{{ item.Name }}</a
                     >
+                    <a
+                      v-if="item.OpenInfoDialog"
+                      @click="
+                        openDialog(
+                          additionalData[item.DataSource].Data,
+                          additionalData[item.DataSource]
+                        )
+                      "
+                      class="text-subtitle1"
+                      style="text-decoration: none; color: inherit"
+                      >{{ item.Name }}</a
+                    >
+                    <p>
+                      <!-- {{ additionalData[item.DataSource].Data.Description }} -->
+                    </p>
                   </q-item-label>
                 </q-item-section>
               </q-item>
@@ -113,11 +128,18 @@
       :data="selectedDisplayData"
       v-model="dialogDisplayVisible"
     />
+    <InfoDialog
+      :item="selectedItem"
+      :data="selectedData"
+      v-model="dialogVisible"
+    />
   </div>
 </template>
 
 <script>
 import DisplayDialog from "./DisplayDialog.vue";
+import InfoDialog from "./InfoDialog.vue";
+import additionalData from "../assets/jsons/additionalData.json";
 
 export default {
   props: {
@@ -128,11 +150,19 @@ export default {
   },
   components: {
     DisplayDialog,
+    InfoDialog,
   },
   data() {
     return {
       selectedDisplayData: null,
       dialogDisplayVisible: false,
+
+      //Info Dialog
+      selectedItem: null,
+      selectedData: null,
+      dialogVisible: false,
+
+      additionalData: additionalData,
     };
   },
   methods: {
@@ -140,6 +170,19 @@ export default {
       this.selectedDisplayData = data;
       this.dialogDisplayVisible = true;
     },
+    openDialog(item, data) {
+      // console.log("Item", item);
+      // console.log("Data", data);
+      this.selectedItem = item;
+      this.selectedData = data;
+      this.dialogVisible = true;
+    },
+    // test(item) {
+    //   console.log("1", item);
+
+    //   console.log("1", additionalData[item.DataSource]);
+    //   console.log("2", additionalData[item.DataSource].Data);
+    // },
   },
 };
 </script>

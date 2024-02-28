@@ -24,7 +24,8 @@
             "Path": "/about-us"
           },
           {
-            "Label": "Contact Us"
+            "Label": "Contact Us",
+            "Path": "/contact-us"
           }
         ]
       },
