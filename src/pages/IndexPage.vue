@@ -80,7 +80,7 @@
       <detailed-card :jsonData="recentWork" />
 
       <!-- Schemes Section -->
-      <image-cards :jsonData="schemes" />
+      <!-- <image-cards :jsonData="schemes" /> -->
     </section>
     <!-- InfoDialog -->
     <!-- <InfoDialog
@@ -102,7 +102,7 @@ import ImageCard from "src/components/ImageCard.vue";
 import IconCard from "src/components/IconCard.vue";
 import DisplayLinks from "src/components/DisplayLinks.vue";
 // import InfoDialog from "src/components/InfoDialog.vue";
-import ImageCards from "src/components/ImageCards.vue";
+// import ImageCards from "src/components/ImageCards.vue";
 import DetailedCard from "src/components/DetailedCard.vue";
 
 export default defineComponent({
@@ -115,7 +115,7 @@ export default defineComponent({
     IconCard,
     DisplayLinks,
     // InfoDialog,
-    ImageCards,
+    // ImageCards,
     DetailedCard,
   },
   data() {

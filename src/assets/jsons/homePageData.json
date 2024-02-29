@@ -5,12 +5,12 @@
     "Data": [
       {
         "Title": "Roads",
-        "Description": "Providing crash barriers bet.km.84/00 to km.95/00(ghat section)km.119/800 to km.121/00 and km.128/00 to km.136/00(selected stretches)in the state of Goa.",
+        "Description": "Providing crash barriers bet.km.84/00 to km.95/00 (ghat section) km.119/800 to km.121/00 and km.128/00 to km.136/00 (selected stretches) in the state of Goa.",
         "DisplayDescription": false,
         "Details": [
           {
             "Name": "Name Of Work",
-            "Value": "Providing crash barriers bet.km.84/00 to km.95/00(ghat section)km.119/800 to km.121/00 and km.128/00 to km.136/00(selected stretches)in the state of Goa."
+            "Value": "Providing crash barriers bet.km.84/00 to km.95/00 (ghat section) km.119/800 to km.121/00 and km.128/00 to km.136/00 (selected stretches) in the state of Goa."
           },
           {
             "Name": "Location",
@@ -22,7 +22,7 @@
           },
           {
             "Name": "Name Of Agency Or Contractor",
-            "Value": "M/s Upto date Developers and Contractors Pvt.Ltd., Dhavali -Ponda"
+            "Value": "M/s Upto date Developers and Contractors Pvt.Ltd., Dhavali - Ponda"
           },
           {
             "Name": "Awarded Amount",
@@ -33,16 +33,112 @@
             "Value": "05/08/2014"
           }
         ],
-        "Image": "src/assets/roads.jpg"
+        "Image": "/assets/roads.jpg"
+      },
+      {
+        "Title": "Roads Under Work DIV25",
+        "Description": "Construction of gutter and retaining wall for Sidhnath temple road in Kakoda including providing interlocking pavers and parking area in Curchorem Constituency.",
+        "DisplayDescription": true,
+        "Image": "/assets/download1.jpeg",
+        "Details": [
+          {
+            "Name": "Name Of Work",
+            "Value": "Construction of gutter and retaining wall for Sidhnath temple road in Kakoda including providing interlocking pavers and parking area in Curchorem Constituency."
+          },
+          {
+            "Name": "Location",
+            "Value": "Sidhnath temple road in Kakoda"
+          },
+          {
+            "Name": "Brief Description",
+            "Value": "Construction of gutter and retaining wall for Sidhnath temple road in Kakoda including providing interlocking pavers and parking area in Curchorem Constituency."
+          },
+          {
+            "Name": "Name Of Agency Or Contractor",
+            "Value": "M/s Suhani Constructions"
+          },
+          {
+            "Name": "Awarded Amount",
+            "Value": "27,72,000/-"
+          },
+          {
+            "Name": "Date Of Completion",
+            "Value": "17/08/2015"
+          }
+        ]
       },
       {
         "Title": "Outdoor Basketball Court of Goa Salesian Society Don Bosco College, Panaji",
-        "Description": "Providing crash barriers bet. km.84/00 to km.95/00 (ghat section) km.119/800 to km.121/00 and km.128/00 to km.136/00 (selected stretches) in the state of Goa.",
+        "Description": "Development of Outdoor Basketball Court of Goa Salesian Society Don Bosco Collage, Panaji Goa under MPLAD Scheme",
         "DisplayDescription": false,
         "Details": [
           {
             "Name": "Name Of Work",
-            "Value": "Providing crash barriers bet. km.84/00 to km.95/00 (ghat section) km.119/800 to km.121/00 and km.128/00 to km.136/00 (selected stretches) in the state of Goa."
+            "Value": "Development of Outdoor Basketball Court of Goa Salesian Society Don Bosco Collage, Panaji Goa under MPLAD Scheme"
+          },
+          {
+            "Name": "Location",
+            "Value": "Don Bosco Collage, Panaji Goa"
+          },
+          {
+            "Name": "Brief Description",
+            "Value": "The work of development of Basketball ground at Don Bosco by providing RCC sub-base with the top finished surface as per the requirement of basketball Court for its dimension & specification is taken up."
+          },
+          {
+            "Name": "Name Of Agency Or Contractor",
+            "Value": "Shri Shantadurga Enterprises, PWD Contractor, 208, Evasudha Colony, Bambolim Goa 403202"
+          },
+          {
+            "Name": "Awarded Amount",
+            "Value": "Rs. 11,83,726.40/-"
+          },
+          {
+            "Name": "Date Of Completion",
+            "Value": "19/06/2013"
+          }
+        ],
+        "Image": "/assets/download.jpeg"
+      },
+      {
+        "Title": "POLICE STATION AT TALEIGAO",
+        "Description": "Proposed Police Station at Taleigao",
+        "DisplayDescription": false,
+        "Details": [
+          {
+            "Name": "Name Of Work",
+            "Value": "Proposed Police Station at Taleigao"
+          },
+          {
+            "Name": "Location",
+            "Value": "Taleigao"
+          },
+          {
+            "Name": "Brief Description",
+            "Value": "It is a newly built Police outpost for Taleigao Constituency"
+          },
+          {
+            "Name": "Name Of Agency Or Contractor",
+            "Value": "M/S S.K. Engineers and Contractors, Ribandar Goa"
+          },
+          {
+            "Name": "Awarded Amount",
+            "Value": "Rs. 3802674.10/-"
+          },
+          {
+            "Name": "Date Of Completion",
+            "Value": "30/04/2011"
+          }
+        ],
+        "Image": "/assets/ps.jpeg"
+      },
+      {
+        "Title": "Crash Barriers",
+        "Description": "Providing crash barriers bet.km.84/00 to km.95/00 (ghat section) km.119/800 to km.121/00 and km.128/00 to km.136/00 (selected stretches) in the state of Goa.",
+        "DisplayDescription": false,
+        "Details": [
+          {
+            "Name": "Name Of Work",
+            "Value": "Providing crash barriers bet.km.84/00 to km.95/00 (ghat section) km.119/800 to km.121/00 and km.128/00 to km.136/00 (selected stretches) in the state of Goa."
           },
           {
             "Name": "Location",
@@ -54,7 +150,7 @@
           },
           {
             "Name": "Name Of Agency Or Contractor",
-            "Value": "M/s Upto date Developers and Contractors Pvt.Ltd., Dhavali -Ponda"
+            "Value": "M/s Upto date Developers and Contractors Pvt.Ltd., Dhavali - Ponda"
           },
           {
             "Name": "Awarded Amount",
@@ -65,19 +161,7 @@
             "Value": "05/08/2014"
           }
         ],
-        "Image": "src/assets/download.jpeg"
-      },
-      {
-        "Title": "POLICE STATION AT TALEIGAO",
-        "Description": "It is a newly built Police outpost for Taleigao Constituency",
-        "DisplayDescription": false,
-        "Image": "src/assets/ps.jpeg"
-      },
-      {
-        "Title": "Crash Barriers",
-        "Description": "Providing crash barriers bet.km.84/00 to km.95/00(ghat section)km.119/800 to km.121/00 and km.128/00 to km.136/00(selected stretches)in the state of Goa.",
-        "DisplayDescription": true,
-        "Image": "src/assets/roads.jpg"
+        "Image": "/assets/roads.jpg"
       }
     ]
   },
@@ -91,7 +175,7 @@
       {
         "Title": "Instructions To Candidates called for Verification of Documents.",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/Instruction_for_Verification_of_documents.pdf",
+        "DownloadLink": "/assets/files/Instruction_for_Verification_of_documents.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -103,7 +187,7 @@
       {
         "Title": "List of Candidates Called for Verification of Documents, TA MechElec",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/TAMechElec.pdf",
+        "DownloadLink": "/assets/files/TAMechElec.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -115,7 +199,7 @@
       {
         "Title": "List of Candidates Called for Verification of Documents, TA Mining",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/TAMining.pdf",
+        "DownloadLink": "/assets/files/TAMining.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -127,7 +211,7 @@
       {
         "Title": "List of Candidates Called for Verification of Documents, TA Comp/Elec/IT",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/TACompEleIT.pdf",
+        "DownloadLink": "/assets/files/TACompEleIT.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -139,7 +223,7 @@
       {
         "Title": "List of Candidates Called for Verification of Documents, TA Civil.",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/TACivil.pdf",
+        "DownloadLink": "/assets/files/TACivil.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -151,7 +235,7 @@
       {
         "Title": "List of Candidates Called for Verification of Documents, JE Mech/Ele",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/JEMechElec.pdf",
+        "DownloadLink": "/assets/files/JEMechElec.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -163,7 +247,7 @@
       {
         "Title": "List of Candidates Called for Verification of Documents, JE Comp/Ele/IT",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/JECompEleIT.pdf",
+        "DownloadLink": "/assets/files/JECompEleIT.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -238,7 +322,7 @@
       {
         "Title": "Circular - Standard Guidelines for Hiring of Vehicles at various offices in PWD",
         "Description": "Circular Number: No.1-8-05/SSW-PWD/Vol-I/2017-18/851",
-        "DownloadLink": "src/assets/files/Circulars/circular.pdf",
+        "DownloadLink": "/assets/files/Circulars/circular.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -250,7 +334,7 @@
       {
         "Title": "Circular - Consumer Price Index Numbers for industrial workers on base 2001=100",
         "Description": "Circular Number: No.112/1/2017-CPI",
-        "DownloadLink": "src/assets/files/Circulars/Cicular1.pdf",
+        "DownloadLink": "/assets/files/Circulars/Cicular1.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -262,7 +346,7 @@
       {
         "Title": "Circular- Office Memorandum ( General Admn. Department)",
         "Description": "Circular Number: No.11/1/2017-GAD/28",
-        "DownloadLink": "src/assets/files/Circulars/circular2.pdf",
+        "DownloadLink": "/assets/files/Circulars/circular2.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -274,7 +358,7 @@
       {
         "Title": "2. Applicability of Goods and services Tax (GST) on works contracts in Government department Instructions on billings, payment and rates reg.",
         "Description": "No. 38/5/2017 - Fin. ( R&C;) dt. 6/11/2017",
-        "DownloadLink": "src/assets/files/Circulars/GST2circular.pdf",
+        "DownloadLink": "/assets/files/Circulars/GST2circular.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -286,7 +370,7 @@
       {
         "Title": "1. Applicability of Goods and services Tax (GST) on supplies of goods and services in Govt. Dept. Instructions on billings, payment and rates reg.",
         "Description": "No. 38/5/2017 - Fin. ( R&C;) dt.12/10/2017",
-        "DownloadLink": "src/assets/files/Circulars/GST.pdf",
+        "DownloadLink": "/assets/files/Circulars/GST.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -298,7 +382,7 @@
       {
         "Title": "GAD-II Circular",
         "Description": "NO.4/32/2013-GAD-II",
-        "DownloadLink": "src/assets/files/Circulars/GST2circular.pdf",
+        "DownloadLink": "/assets/files/Circulars/GST2circular.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -319,7 +403,7 @@
       {
         "Title": "PWD/WDXVII/PHE.N / ASW / F.29/ 16 /2022-23, Dated : 07/06/2022",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/NoticeInvitingTenders/PWD-WDXVII-PHE.N-ASW-F.29-16-2022-23.pdf",
+        "DownloadLink": "/assets/files/NoticeInvitingTenders/PWD-WDXVII-PHE.N-ASW-F.29-16-2022-23.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -331,7 +415,7 @@
       {
         "Title": "PWD/WDXVII/PHE.N/ASW/F.29/15/2022-23, Dated : 07/06/2022",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/NoticeInvitingTenders/15.pdf",
+        "DownloadLink": "/assets/files/NoticeInvitingTenders/15.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -343,7 +427,7 @@
       {
         "Title": "PWD/WDXVII/PHE.N / ASW / F.29/11/2022-23",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo11.pdf",
+        "DownloadLink": "/assets/files/NoticeInvitingTenders/QuotationNo11.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -355,7 +439,7 @@
       {
         "Title": "PWD/WDXVII/PHE.N / ASW / F.29/09/2022-23",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo9.pdf",
+        "DownloadLink": "/assets/files/NoticeInvitingTenders/QuotationNo9.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": true,
@@ -367,7 +451,7 @@
       {
         "Title": "PWD/WDXVII/PHE.N / ASW / F.29/07/2022-23",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo07.pdf",
+        "DownloadLink": "/assets/files/NoticeInvitingTenders/QuotationNo07.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -379,7 +463,7 @@
       {
         "Title": "QuotationNo.4",
         "Description": "Download Attached Doc",
-        "DownloadLink": "src/assets/files/NoticeInvitingTenders/QuotationNo.4.pdf",
+        "DownloadLink": "/assets/files/NoticeInvitingTenders/QuotationNo.4.pdf",
         "DownloadButton": true,
         "DisplayDescription": true,
         "NewIcon": false,
@@ -399,35 +483,28 @@
     "BackgroundColorClass": "bg-grey-1",
     "Data": [
       {
-        "Name": "CITIZEN CHARTERS",
-        "Link": "https:test.in/download_link.pdf",
-        "LinkIcon": "link"
-      },
-      {
         "Name": "ABOUT THE PORTAL",
         "LinkIcon": "link",
         "OpenInfoDialog": true,
         "DataSource": "AboutThePortal"
       },
       {
-        "Name": "RELATED LINKS",
-        "Link": "https:test.in/download_link.pdf",
-        "LinkIcon": "link"
+        "Name": "CONTACT INFORMATION",
+        "LinkIcon": "link",
+        "OpenInfoDialog": true,
+        "DataSource": "ContactInformation"
       },
       {
         "Name": "RTI",
-        "Link": "https:test.in/download_link.pdf",
-        "LinkIcon": "link"
+        "LinkIcon": "link",
+        "OpenInfoDialog": true,
+        "DataSource": "RtiData"
       },
       {
-        "Name": "CONTRACTORS REGISTRATION DETAILS",
-        "Link": "https:test.in/download_link.pdf",
-        "LinkIcon": "link"
-      },
-      {
-        "Name": "CONTACT INFORMATION",
-        "Link": "https:test.in/download_link.pdf",
-        "LinkIcon": "link"
+        "Name": "Ease Of Doing Business",
+        "LinkIcon": "link",
+        "OpenInfoDialog": true,
+        "DataSource": "EaseOfDoingBusiness"
       }
     ]
   },
@@ -439,7 +516,7 @@
     "Data": [
       {
         "Title": "BUILDINGS",
-        "Image": "src/assets/buildings.jpg",
+        "Image": "/assets/buildings.jpg",
         "Description": "The works completed up to 31st December 2020 are as follows: \n Beautification of the area near Kelbai Temple at Kudne village in Sanquelim Constituency at a cost of Rs. 14.19 lakhs. Laying of Pavers for crematorium including other miscellaneous works at Pajwada in Ward No. 09 in Bicholim Constituency at a cost of Rs. 14.79 lakhs. Construction of Community hall along with seater Toilet in Ward No. 108/26 and Ward No. 111 at Khodgini Surla in Bicholim Taluka at a cost of Rs. 34.05 lakhs. Construction of shed and other works in sy no. 61 Shri Kelbai Devasthan Gaonkarwada Mulgao in Bicholim at a cost of Rs. 24.89 lakhs. Construction of Ganpati shed and Beautification of surrounding area and construction of retaining wall at Patto Gaonkarwada, Narva Bicholim at a cost of Rs. 32.42 lakhs. Proposed beautification work of Kranti Maidan in Ponda-Goa-S.H.-Artist Work at a cost of Rs. 61.11 lakhs.",
         "DisplayDescription": true,
         "Button": true,
@@ -450,7 +527,7 @@
       },
       {
         "Title": "ROADS & BRIDGES",
-        "Image": "src/assets/road_bridges.jpg",
+        "Image": "/assets/road_bridges.jpg",
         "Description": "The works completed up to 31st December 2020 are as follows: \n Beautification of the area near Kelbai Temple at Kudne village in Sanquelim Constituency at a cost of Rs. 14.19 lakhs. Laying of Pavers for crematorium including other miscellaneous works at Pajwada in Ward No. 09 in Bicholim Constituency at a cost of Rs. 14.79 lakhs. Construction of Community hall along with seater Toilet in Ward No. 108/26 and Ward No. 111 at Khodgini Surla in Bicholim Taluka at a cost of Rs. 34.05 lakhs. Construction of shed and other works in sy no. 61 Shri Kelbai Devasthan Gaonkarwada Mulgao in Bicholim at a cost of Rs. 24.89 lakhs. Construction of Ganpati shed and Beautification of surrounding area and construction of retaining wall at Patto Gaonkarwada, Narva Bicholim at a cost of Rs. 32.42 lakhs. Proposed beautification work of Kranti Maidan in Ponda-Goa-S.H.-Artist Work at a cost of Rs. 61.11 lakhs.",
         "DisplayDescription": true,
         "Button": true,
@@ -459,11 +536,11 @@
       },
       {
         "Title": "WATER SUPPLY & SANITATION",
-        "Image": "src/assets/watertreatmeant.ppm"
+        "Image": "/assets/watertreatmeant.ppm"
       },
       {
         "Title": "NATIONAL HIGHWAY",
-        "Image": "src/assets/roads1.jpg"
+        "Image": "/assets/roads1.jpg"
       }
     ]
   },
@@ -471,7 +548,7 @@
     "SectionTitle": "Swachh Bharat Mission",
     "SectionType": "ImageCard",
     "Data": {
-      "Image": "src/assets/SwacchBharat_logo.jpg",
+      "Image": "/assets/SwacchBharat_logo.jpg",
       "Link": "https://sbmurban.org/",
       "OpenInNewTab": true
     }
@@ -481,8 +558,8 @@
     "SectionType": "IconCard",
     "Data": {
       "Icon": "receipt_long",
-      "Title": "Bill Payment",
-      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Title": "Water Bill Payment",
+      "Description": "Pay your water bill online",
       "Color": "#1976d2",
       "Link": "https://goaonline.gov.in/Appln/UIL/DeptServices?__DocId=PWD&__ServiceId=PWD01",
       "OpenInNewTab": true,
@@ -506,19 +583,19 @@
     "AutoPlay": true,
     "Data": [
       {
-        "Image": "src/assets/home_hero_0.jpg"
+        "Image": "/assets/home_hero_0.jpg"
       },
       {
-        "Image": "src/assets/home_hero_1.jpg"
+        "Image": "/assets/home_hero_1.jpg"
       },
       {
-        "Image": "src/assets/home_hero_2.jpg"
+        "Image": "/assets/home_hero_2.jpg"
       },
       {
-        "Image": "src/assets/home_hero_3.jpg"
+        "Image": "/assets/home_hero_3.jpg"
       },
       {
-        "Image": "src/assets/home_hero_4.jpg"
+        "Image": "/assets/home_hero_4.jpg"
       }
     ]
   }

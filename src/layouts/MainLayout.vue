@@ -8,7 +8,7 @@
           <div class="col-md-6 flex">
             <img
               alt="Logo"
-              src="src/assets/government-of-goa-logo.png"
+              src="/assets/government-of-goa-logo.png"
               class="q-mx-md"
               style="height: 100px"
             />
@@ -63,7 +63,7 @@
           <div class="col-md-6 flex">
             <img
               alt="Logo"
-              src="src/assets/government-of-goa-logo.png"
+              src="/assets/government-of-goa-logo.png"
               class="q-mx-md"
               :style="{
                 height: $q.screen.gt.sm
@@ -211,12 +211,25 @@
                   </template>
                 </q-list>
               </q-btn-dropdown>
-              <q-btn
-                v-else
-                :label="menuItem.Label"
-                @click="handleNavigation(menuItem)"
-                :key="'button-' + index"
-              />
+              <template v-else>
+                <q-btn
+                  v-if="menuItem.OpenInfoDialog"
+                  :label="menuItem.Label"
+                  @click="
+                    openDialog(
+                      additionalData[menuItem.DataSource].Data,
+                      additionalData[menuItem.DataSource]
+                    )
+                  "
+                  :key="'button-' + index"
+                />
+                <q-btn
+                  v-else
+                  :label="menuItem.Label"
+                  @click="handleNavigation(menuItem)"
+                  :key="'button-' + index"
+                />
+              </template>
             </template>
           </q-btn-group>
         </div>
@@ -283,9 +296,12 @@
         </q-list>
       </q-scroll-area>
 
+      <!--
+        src="/assets/home_hero_0.jpg"
+      -->
       <q-img
         class="absolute-top"
-        src="https://cdn.quasar.dev/img/material.png"
+        src="/assets/pwd_goa_head.webp"
         style="height: 150px"
       >
         <div class="absolute-bottom bg-transparent">
@@ -298,21 +314,50 @@
       </q-img>
     </q-drawer>
 
+    <InfoDialog
+      :item="selectedItem"
+      :data="selectedData"
+      v-model="dialogVisible"
+    />
+
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer class="footer bg-dark q-pt-sm text-white" style="">
+      <div class="q-pt-sm">
+        <div
+          class="row"
+          :class="$q.screen.lt.sm ? 'text-center ' : 'justify-between'"
+        >
+          <div class="q-pl-md" style="">
+            <p>
+              Copyright © 2024 Public Works Department - Govt. of Goa, India.
+              All Rights Reserved.
+            </p>
+          </div>
+          <div class="q-pr-md" :style="$q.screen.lt.sm ? 'width: 100%' : ''">
+            <p>freethink v2024.02.28.01</p>
+          </div>
+        </div>
+      </div>
+    </q-footer>
   </q-layout>
 </template>
 <script>
 import { useGeneralStore } from "src/stores/generalStore";
 import mainLayoutData from "../assets/jsons/mainLayoutData.json";
+import additionalData from "../assets/jsons/additionalData.json";
+import InfoDialog from "src/components/InfoDialog.vue";
 
 const generalStore = useGeneralStore();
 
 export default {
   name: "MainLayout",
 
-  components: {},
+  components: {
+    InfoDialog,
+  },
 
   data() {
     return {
@@ -320,6 +365,13 @@ export default {
       generalStore,
       mainLayoutData: mainLayoutData,
       darkMode: false,
+
+      //Info Dialog
+      selectedItem: null,
+      selectedData: null,
+      dialogVisible: false,
+
+      additionalData: additionalData,
     };
   },
   computed: {
@@ -356,6 +408,14 @@ export default {
         // Navigate to external link if Link attribute exists
         window.open(menuItem.Link, "_blank");
       }
+    },
+
+    openDialog(item, data) {
+      // console.log("Item", item);
+      // console.log("Data", data);
+      this.selectedItem = item;
+      this.selectedData = data;
+      this.dialogVisible = true;
     },
   },
   watch: {

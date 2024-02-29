@@ -6,8 +6,8 @@
     <q-card class="my-card shadow-1" style="border-radius: 7px">
       <q-img
         :src="jsonData.Data.Image"
-        fit="cover"
         style="height: 250px !important"
+        fit="container"
       ></q-img>
     </q-card>
   </a>

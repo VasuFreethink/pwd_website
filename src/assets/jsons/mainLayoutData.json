@@ -14,12 +14,6 @@
         "Icon": "info",
         "SubMenu": [
           {
-            "Label": "History of PWD Goa"
-          },
-          {
-            "Label": "Organisation Chart"
-          },
-          {
             "Label": "About Us",
             "Path": "/about-us"
           },
@@ -30,55 +24,17 @@
         ]
       },
       {
-        "Name": "schemes",
-        "Label": "SCHEMES",
-        "Icon": "receipt_long",
-        "SubMenu": [
-          {
-            "Label": "Buildings"
-          },
-          {
-            "Label": "Roads & Bridges"
-          },
-          {
-            "Label": "Water Supply & Sanitation"
-          },
-          {
-            "Label": "National Highway"
-          }
-        ]
-      },
-      {
-        "Name": "circulars",
-        "Label": "CIRCULARS",
-        "Icon": "text_snippet",
-        "SubMenu": [
-          {
-            "Label": "Orders"
-          },
-          {
-            "Label": "Circulars"
-          },
-          {
-            "Label": "Documents"
-          }
-        ]
-      },
-      {
-        "Name": "easeofdoingbusiness",
-        "Label": "EASE OF DOING BUSINESS",
-        "Icon": "map"
-      },
-      {
         "Name": "gallery",
         "Label": "GALLERY",
         "Icon": "map",
         "Path": "/gallery"
       },
       {
-        "Name": "employeecorner",
-        "Label": "EMPLOYEE CORNER",
-        "Icon": "assignment_ind"
+        "Name": "easeofdoingbusiness",
+        "Label": "EASE OF DOING BUSINESS",
+        "Icon": "public",
+        "OpenInfoDialog": true,
+        "DataSource": "EaseOfDoingBusiness"
       },
       {
         "Name": "publicgrievance",

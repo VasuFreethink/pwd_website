@@ -4,7 +4,7 @@
     "Data": [
       {
         "Title": "Water Treatment Plant",
-        "Image": "src/assets/watertreatmeant.ppm"
+        "Image": "/assets/watertreatmeant.ppm"
       }
     ]
   },
@@ -13,11 +13,11 @@
     "Data": [
       {
         "Title": "Roads",
-        "Image": "src/assets/roads.jpg"
+        "Image": "/assets/roads.jpg"
       },
       {
-        "Title": "NATIONAL HIGHWAY",
-        "Image": "src/assets/roads1.jpg"
+        "Title": "National Highway",
+        "Image": "/assets/roads1.jpg"
       }
     ]
   },
@@ -25,8 +25,8 @@
     "SectionTitle": "Bridges Gallery",
     "Data": [
       {
-        "Title": "ROADS & BRIDGES",
-        "Image": "src/assets/road_bridges.jpg"
+        "Title": "Roads & Bridges",
+        "Image": "/assets/road_bridges.jpg"
       }
     ]
   },
@@ -36,17 +36,17 @@
       {
         "Title": "Roads",
         "Name": "GalleryRoads",
-        "Image": "src/assets/roads.jpg"
+        "Image": "/assets/roads.jpg"
       },
       {
         "Title": "Bridges",
         "Name": "GalleryBridges",
-        "Image": "src/assets/road_bridges.jpg"
+        "Image": "/assets/road_bridges.jpg"
       },
       {
         "Title": "Water Supply",
         "Name": "GalleryWaterSupply",
-        "Image": "src/assets/watertreatmeant.ppm"
+        "Image": "/assets/watertreatmeant.ppm"
       }
     ]
   }

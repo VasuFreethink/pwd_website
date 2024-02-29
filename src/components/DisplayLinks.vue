@@ -59,9 +59,6 @@
                       style="text-decoration: none; color: inherit"
                       >{{ item.Name }}</a
                     >
-                    <p>
-                      <!-- {{ additionalData[item.DataSource].Data.Description }} -->
-                    </p>
                   </q-item-label>
                 </q-item-section>
               </q-item>
@@ -139,7 +136,7 @@
 <script>
 import DisplayDialog from "./DisplayDialog.vue";
 import InfoDialog from "./InfoDialog.vue";
-import additionalData from "../assets/jsons/additionalData.json";
+import additionalData from "assets/jsons/additionalData.json";
 
 export default {
   props: {

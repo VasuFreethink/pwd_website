@@ -65,6 +65,44 @@
               </p>
             </div>
           </div>
+
+          <!-- DownloadFiles -->
+          <div v-if="item.DownloadFiles">
+            <file-viewer :jsonData="item.DownloadFiles" />
+            <!-- <div v-for="(list, index) in item.DownloadFiles" :key="index">
+              <h6 class="q-mb-none q-mt-md" v-if="list.MainTitle">
+                {{ list.MainTitle }}
+              </h6>
+              <q-card class="q-my-md shadow-1">
+                <q-card-section class="q-pa-none">
+                  <q-list class="q-ma-none">
+                    <q-item
+                      v-if="list.Title"
+                      clickable
+                      @click="downloadItem(list)"
+                    >
+                      <q-item-section>
+                        <p class="q-mb-none">
+                          {{ list.Title }}
+                        </p>
+                        <p v-if="list.Date" caption>
+                          {{ list.Date }}
+                        </p>
+                      </q-item-section>
+                      <q-item-section side top>
+                        <q-btn
+                          flat
+                          dense
+                          icon="cloud_download"
+                          @click="downloadItem(list)"
+                        />
+                      </q-item-section>
+                    </q-item>
+                  </q-list>
+                </q-card-section>
+              </q-card>
+            </div> -->
+          </div>
         </q-page>
       </q-page-container>
       <q-footer class="text-right bg-white">
@@ -97,9 +135,13 @@
 </template>
 <script>
 import { useGeneralStore } from "src/stores/generalStore";
+import FileViewer from "./FileViewer.vue";
 
 const generalStore = useGeneralStore();
 export default {
+  components: {
+    FileViewer,
+  },
   props: {
     item: {
       type: Object,

@@ -16,5 +16,106 @@
         }
       ]
     }
+  },
+  "ContactInformation": {
+    "SectionTitle": "Contact Information",
+    "SectionType": "infodialog",
+    "PrimaryColor": "primary",
+    "Data": {
+      "Details": [
+        {
+          "Value": "Public Works Department, Govt. of Goa Head Office, Altinho Panaji Goa 403001"
+        },
+        {
+          "Value": "Phone: 0832-2224984 /0832-2422901"
+        },
+        {
+          "Value": "Email: pce-pwd.goa@nic.in"
+        }
+      ]
+    }
+  },
+  "RtiData": {
+    "SectionTitle": "RTI",
+    "SectionType": "infodialog",
+    "PrimaryColor": "primary",
+    "Data": {
+      "DownloadFiles": [
+        {
+          "Title": "LIST OF PIO's and APIO's",
+          "DownloadLink": "assets/files/RTI/LISTOFPIOAPIO.pdf",
+          "Date": "30th April 2021"
+        },
+        {
+          "Title": "Annual Returns Under RTI",
+          "DownloadLink": "assets/files/RTI/AnnualRTIReturns2020.pdf",
+          "Date": "30th April 2021"
+        }
+      ]
+    }
+  },
+  "EaseOfDoingBusiness": {
+    "SectionTitle": "Road Cutting Permission and Water Connection",
+    "SectionType": "infodialog",
+    "PrimaryColor": "primary",
+    "Data": {
+      "DownloadFiles": [
+        {
+          "MainTitle": "Procedure for release of house sewer connection",
+          "Title": "Procedure for release of house sewer connection",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/Procedure_for_release_of_house_sewer_connection.pdf"
+        },
+        {
+          "MainTitle": "Procedure for Road Cutting Permission",
+          "Title": "Roads, NH Sector",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/JurisdictionRoadsforBRAP.pdf"
+        },
+        {
+          "Title": "Time Frame",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/TimeframeRoads.pdf"
+        },
+        {
+          "Title": "Detailed Procedure",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/DetailedProcedureRC.pdf"
+        },
+        {
+          "Title": "FlowChart for Issue of ROW/Road Cutting",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/FlowchartIssueofRightWRoad.pdf"
+        },
+        {
+          "MainTitle": "Procedure and Annexures for Water Supply Connection for Industries",
+          "Title": "DetailedProcedure",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/DetailedProcedure.pdf"
+        },
+        {
+          "Title": "Flowchart",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/Flowchart.pdf"
+        },
+        {
+          "Title": "1. Annexure I",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/ANNEXUREI.pdf"
+        },
+        {
+          "Title": "2. Annexure II",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/AnnexureII.pdf"
+        },
+        {
+          "Title": "3. Annexure III",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/ANNEXUREIII.pdf"
+        },
+        {
+          "Title": "4. Annexure IV",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/AnnexureIV.pdf"
+        },
+        {
+          "Title": "5. Annexure VI",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/AnnexureVI.pdf"
+        },
+        {
+          "Title": "TIME FRAME",
+          "DownloadLink": "assets/files/EaseOfDoingBusiness/TimeframeWaterConnection.pdf"
+        }
+      ]
+    }
   }
 }

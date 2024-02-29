@@ -53,6 +53,9 @@ module.exports = configure(function (/* ctx */) {
         node: "node20",
       },
 
+      // Public path of your app. default '/'
+      // publicPath: "/test/",
+
       vueRouterMode: "hash", // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
