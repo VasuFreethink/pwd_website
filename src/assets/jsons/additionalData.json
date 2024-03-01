@@ -1,22 +1,4 @@
 {
-  "AboutThePortal": {
-    "SectionTitle": "About The Portal",
-    "SectionType": "infodialog",
-    "PrimaryColor": "primary",
-    "Data": {
-      "Details": [
-        {
-          "Value": "This is the Official Portal of the Public Works Department Government of Goa, designed, developed by M/s. DEMERG Systems India and hosted at State Data Centre of  the Department of Information Technology Government of Goa."
-        },
-        {
-          "Value": "The objective behind the Portal is to provide a single window access to the information and services being provided by Public Works Department , Government  of Goa for citizens and other stakeholders. An attempt has been made through this Portal to provide comprehensive, accurate, reliable and one stop source of information about Public Works Department , Government  of Goa and its various facets."
-        },
-        {
-          "Value": "The content of this Portal is managed  by the Public Works Department , Government  of Goa. It is our goal to continue the enhancement and enrichment of this Portal in terms of content coverage, design and technology on a regular basis."
-        }
-      ]
-    }
-  },
   "ContactInformation": {
     "SectionTitle": "Contact Information",
     "SectionType": "infodialog",
@@ -117,5 +99,132 @@
         }
       ]
     }
+  },
+  "EmployeesCorner": {
+    "SectionTitle": "Employees Corner",
+    "SectionType": "infodialog",
+    "PrimaryColor": "primary",
+    "BackgroundColorClass": "bg-grey-4",
+    "Data": {
+      "DownloadFiles": [
+        {
+          "MainTitle": "Important Forms :",
+          "Title": "1. Earned Leave Application Form",
+          "DownloadLink": "assets/files/EmployeesCorner/EL.pdf"
+        }
+      ]
+    }
+  },
+  "CitizenCharter": {
+    "SectionTitle": "Citizen Charter for PWD",
+    "SectionType": "infodialog",
+    "PrimaryColor": "primary",
+    "Data": {
+      "DownloadFiles": [
+        {
+          "MainTitle": "CITIZEN CHARTER",
+          "Title": "Buildings, Roads and Bridges and Water Supply",
+          "Date": "31st March 2021",
+          "DownloadLink": "assets/files/CitizensCharter/CitizensCharter2021.pdf"
+        },
+        {
+          "MainTitle": "Supporting Annexures for Office Addresses",
+          "Title": "1. Annexure A",
+          "DownloadLink": "assets/files/CitizensCharter/Annexure-A.pdf"
+        },
+        {
+          "Title": "2. Annexure B",
+          "DownloadLink": "assets/files/CitizensCharter/Annexure-B.pdf"
+        },
+        {
+          "Title": "3. Annexure C",
+          "DownloadLink": "assets/files/CitizensCharter/Annexure-C.pdf"
+        },
+        {
+          "MainTitle": "Annexures for Water Supply and Sanitation",
+          "Title": "1. Annexure I",
+          "DownloadLink": "assets/files/CitizensCharter/ANNEXUREI.pdf"
+        },
+        {
+          "MainTitle": "Annexures for Water Supply and Sanitation",
+          "Title": "2. Annexure II",
+          "DownloadLink": "assets/files/CitizensCharter/AnnexureII.pdf"
+        },
+        {
+          "MainTitle": "Annexures for Water Supply and Sanitation",
+          "Title": "3. Annexure III",
+          "DownloadLink": "assets/files/CitizensCharter/ANNEXUREIII.pdf"
+        },
+        {
+          "MainTitle": "Annexures for Water Supply and Sanitation",
+          "Title": "4. Annexure IV",
+          "DownloadLink": "assets/files/CitizensCharter/AnnexureIV.pdf"
+        }
+      ]
+    }
+  },
+  "RelatedLinks": {
+    "SectionTitle": "Related Links",
+    "SectionType": "links",
+    "DisplayIcon": true,
+    "Display": "card",
+    "Data": [
+      {
+        "Name": "Government of Goa",
+        "Label": "Government of Goa",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://www.goa.gov.in"
+      },
+      {
+        "Name": "Department of Information and Publicity",
+        "Label": "Department of Information and Publicity",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://dip.goa.gov.in/"
+      },
+      {
+        "Name": "Rural Development Department, Goa",
+        "Label": "Rural Development Department, Goa",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://www.goa.gov.in/department/rural-development/"
+      },
+      {
+        "Name": "Goa State Pollution Control Board",
+        "Label": "Goa State Pollution Control Board",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://www.goaspcb.gov.in"
+      },
+      {
+        "Name": "Ministry Of Urban Development, Goa",
+        "Label": "Ministry Of Urban Development, Goa",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://www.goa.gov.in/department/department-of-urban-development/"
+      },
+      {
+        "Name": "Ministry of Road Transport and highway",
+        "Label": "Ministry of Road Transport and highway",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://morth.nic.in/"
+      },
+      {
+        "Name": "Department of Education, Government of India",
+        "Label": "Department of Education, Government of India",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://www.education.gov.in/"
+      },
+      {
+        "Name": "Department of Information Technology",
+        "Label": "Department of Information Technology",
+        "LinkIcon": "link",
+        "OpenNewTab": true,
+        "Link": "https://www.dit.goa.gov.in/"
+      }
+    ]
   }
 }

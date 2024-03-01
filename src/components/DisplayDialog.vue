@@ -48,7 +48,30 @@
                     <q-item-section>
                       <q-item-label>
                         <a
+                          v-if="item.Link"
                           :href="item.Link"
+                          :target="item.OpenNewTab ? '_blank' : null"
+                          class="text-subtitle1"
+                          style="text-decoration: none; color: inherit"
+                          >{{ item.Name }}</a
+                        >
+                        <a
+                          v-if="item.OpenInfoDialog"
+                          @click="
+                            openDialog(
+                              additionalData[item.DataSource].Data,
+                              additionalData[item.DataSource]
+                            )
+                          "
+                          class="text-subtitle1"
+                          style="text-decoration: none; color: inherit"
+                          >{{ item.Name }}</a
+                        >
+                        <a
+                          v-if="item.OpenDisplayDialog"
+                          @click="
+                            openDisplayDialog(additionalData[item.DataSource])
+                          "
                           class="text-subtitle1"
                           style="text-decoration: none; color: inherit"
                           >{{ item.Name }}</a
@@ -77,7 +100,29 @@
                 <q-item-section>
                   <q-item-label>
                     <a
+                      v-if="item.Link"
                       :href="item.Link"
+                      class="text-subtitle1"
+                      style="text-decoration: none; color: inherit"
+                      >{{ item.Name }}</a
+                    >
+                    <a
+                      v-if="item.OpenInfoDialog"
+                      @click="
+                        openDialog(
+                          additionalData[item.DataSource].Data,
+                          additionalData[item.DataSource]
+                        )
+                      "
+                      class="text-subtitle1"
+                      style="text-decoration: none; color: inherit"
+                      >{{ item.Name }}</a
+                    >
+                    <a
+                      v-if="item.OpenDisplayDialog"
+                      @click="
+                        openDisplayDialog(additionalData[item.DataSource])
+                      "
                       class="text-subtitle1"
                       style="text-decoration: none; color: inherit"
                       >{{ item.Name }}</a
@@ -123,7 +168,11 @@
               </q-item-section>
             </q-item>
           </div>
-
+          <!-- Display Dialog -->
+          <display-dialog
+            :data="selectedDisplayData"
+            v-model="dialogDisplayVisible"
+          />
           <!-- Info Dialog -->
           <InfoDialog
             :item="selectedItem"
@@ -138,15 +187,19 @@
     </q-layout>
   </q-dialog>
 </template>
-
 <script>
 import InfoDialog from "./InfoDialog.vue";
+// import DisplayDialog from "DisplayDialog.vue";
 import { useGeneralStore } from "src/stores/generalStore";
+import additionalData from "assets/jsons/additionalData.json";
 
 const generalStore = useGeneralStore();
+
 export default {
+  name: "DisplayDialog",
   components: {
     InfoDialog,
+    // DisplayDialog,
   },
   props: {
     data: {
@@ -169,15 +222,25 @@ export default {
       this.selectedData = data1;
       this.dialogVisible = true;
     },
+    openDisplayDialog(data) {
+      console.log("hiiii", data);
+      this.selectedDisplayData = data;
+      this.dialogDisplayVisible = true;
+    },
   },
   data() {
     return {
+      selectedDisplayData: null,
+      dialogDisplayVisible: false,
+
       //Info Dialog
       selectedItem: null,
       selectedData: null,
       dialogVisible: false,
 
       generalStore,
+
+      additionalData: additionalData,
     };
   },
 };

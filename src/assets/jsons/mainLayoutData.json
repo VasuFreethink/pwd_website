@@ -37,6 +37,13 @@
         "DataSource": "EaseOfDoingBusiness"
       },
       {
+        "Name": "employeescorner",
+        "Label": "Employees Corner",
+        "Icon": "public",
+        "OpenInfoDialog": true,
+        "DataSource": "EmployeesCorner"
+      },
+      {
         "Name": "publicgrievance",
         "Label": "PUBLIC GRIEVANCE",
         "Icon": "public",

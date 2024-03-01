@@ -22,7 +22,7 @@
               class="col-md-6 col-12"
               :class="{ 'q-pr-sm': !$q.screen.lt.md }"
             >
-              <image-card :jsonData="swachhBharatMissionImageCard" />
+              <icon-card :jsonData="tankerRegistrationIconCard" />
             </div>
             <div
               class="col-md-6 col-12"
@@ -88,6 +88,21 @@
       :data="selectedData"
       v-model="dialogVisible"
     /> -->
+
+    <section>
+      <div
+        class="row flex justify-content-center"
+        :class="$q.screen.lt.md ? 'q-pa-sm' : 'q-pa-md'"
+      >
+        <div class="col-md-4"></div>
+        <div class="col-md-2 col-6 q-pr-xs">
+          <image-card :jsonData="swachhBharatMissionImageCard" />
+        </div>
+        <div class="col-md-2 col-6 q-pl-xs">
+          <image-card :jsonData="azadiKaAmritImageCard" />
+        </div>
+      </div>
+    </section>
   </q-page>
 </template>
 
@@ -143,8 +158,14 @@ export default defineComponent({
     swachhBharatMissionImageCard() {
       return this.homePageData.SwachhBharatMissionImageCard;
     },
+    azadiKaAmritImageCard() {
+      return this.homePageData.AzadiKaAmritImageCard;
+    },
     billIconCard() {
       return this.homePageData.BillIconCard;
+    },
+    tankerRegistrationIconCard() {
+      return this.homePageData.TankerRegistrationIconCard;
     },
     importantLinks() {
       return this.homePageData.ImportantLinks;

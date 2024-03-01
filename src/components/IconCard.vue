@@ -23,6 +23,7 @@
     >
       <!-- :style="{ borderColor: jsonData.Data.Color }" -->
       <q-card-section class="text-center">
+        <svg-icon type="mdi" :path="jsonData.Data.Icon"></svg-icon>
         <q-icon
           :name="jsonData.Data.Icon"
           size="6em"

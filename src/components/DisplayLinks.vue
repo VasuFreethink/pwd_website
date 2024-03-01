@@ -59,6 +59,15 @@
                       style="text-decoration: none; color: inherit"
                       >{{ item.Name }}</a
                     >
+                    <a
+                      v-if="item.OpenDisplayDialog"
+                      @click="
+                        openDisplayDialog(additionalData[item.DataSource])
+                      "
+                      class="text-subtitle1"
+                      style="text-decoration: none; color: inherit"
+                      >{{ item.Name }}</a
+                    >
                   </q-item-label>
                 </q-item-section>
               </q-item>
@@ -87,7 +96,20 @@
               <q-item-section>
                 <q-item-label>
                   <a
+                    v-if="item.Link"
                     :href="item.Link"
+                    class="text-subtitle1"
+                    style="text-decoration: none; color: inherit"
+                    >{{ item.Name }}</a
+                  >
+                  <a
+                    v-if="item.OpenInfoDialog"
+                    @click="
+                      openDialog(
+                        additionalData[item.DataSource].Data,
+                        additionalData[item.DataSource]
+                      )
+                    "
                     class="text-subtitle1"
                     style="text-decoration: none; color: inherit"
                     >{{ item.Name }}</a
@@ -100,7 +122,10 @@
             </q-item>
           </q-list>
         </div>
-        <div class="text-center">
+        <div
+          class="text-center"
+          v-if="jsonData.Data.length > jsonData.SummaryLength"
+        >
           <q-btn
             v-if="jsonData.Display === 'card'"
             color="white"

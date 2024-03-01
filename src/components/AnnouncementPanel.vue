@@ -66,6 +66,7 @@
       <!-- View More Button -->
       <div class="text-center">
         <q-btn
+          v-if="jsonData.Data.length > jsonData.SummaryLength"
           outline
           :color="jsonData.PrimaryColor ? jsonData.PrimaryColor : ''"
           class="q-mt-sm q-mb-md no-shadow"

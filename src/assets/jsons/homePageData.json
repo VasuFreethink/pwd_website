@@ -483,16 +483,10 @@
     "BackgroundColorClass": "bg-grey-1",
     "Data": [
       {
-        "Name": "ABOUT THE PORTAL",
+        "Name": "CITIZEN CHARTER",
         "LinkIcon": "link",
         "OpenInfoDialog": true,
-        "DataSource": "AboutThePortal"
-      },
-      {
-        "Name": "CONTACT INFORMATION",
-        "LinkIcon": "link",
-        "OpenInfoDialog": true,
-        "DataSource": "ContactInformation"
+        "DataSource": "CitizenCharter"
       },
       {
         "Name": "RTI",
@@ -501,10 +495,22 @@
         "DataSource": "RtiData"
       },
       {
-        "Name": "Ease Of Doing Business",
+        "Name": "RELATED LINKS",
+        "LinkIcon": "link",
+        "OpenDisplayDialog": true,
+        "DataSource": "RelatedLinks"
+      },
+      {
+        "Name": "CONTACT INFORMATION",
         "LinkIcon": "link",
         "OpenInfoDialog": true,
-        "DataSource": "EaseOfDoingBusiness"
+        "DataSource": "ContactInformation"
+      },
+      {
+        "Name": "EMPLOYEES CORNER",
+        "LinkIcon": "link",
+        "OpenInfoDialog": true,
+        "DataSource": "EmployeesCorner"
       }
     ]
   },
@@ -548,8 +554,19 @@
     "SectionTitle": "Swachh Bharat Mission",
     "SectionType": "ImageCard",
     "Data": {
+      "Height": "120",
       "Image": "/assets/SwacchBharat_logo.jpg",
       "Link": "https://sbmurban.org/",
+      "OpenInNewTab": true
+    }
+  },
+  "AzadiKaAmritImageCard": {
+    "SectionTitle": "Azadi Ka Amrit Mahotsav",
+    "SectionType": "ImageCard",
+    "Data": {
+      "Height": "120",
+      "Image": "assets/AzadiKaAmritmohotsav.jpg",
+      "Link": "https://amritmahotsav.nic.in/",
       "OpenInNewTab": true
     }
   },
@@ -562,6 +579,19 @@
       "Description": "Pay your water bill online",
       "Color": "#1976d2",
       "Link": "https://goaonline.gov.in/Appln/UIL/DeptServices?__DocId=PWD&__ServiceId=PWD01",
+      "OpenInNewTab": true,
+      "BackgroundColorClass": "bg-grey-1"
+    }
+  },
+  "TankerRegistrationIconCard": {
+    "SectionTitle": "Tanker Registration",
+    "SectionType": "IconCard",
+    "Data": {
+      "Icon": "local_shipping",
+      "Title": "Tanker Registration",
+      "Description": "Click here to register your Tanker",
+      "Color": "#1976d2",
+      "Link": "https://tanker.pwdgoa.com/",
       "OpenInNewTab": true,
       "BackgroundColorClass": "bg-grey-1"
     }
