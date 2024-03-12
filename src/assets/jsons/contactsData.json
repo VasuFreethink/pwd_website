@@ -3,133 +3,56 @@
     "SectionTitle": "Contact Us",
     "SectionType": "DataTable",
     "Title": "",
+    "RowsPerPageOptions": [15, 25, 50, 75, 100, 150],
     "BackgroundColorClass": "bg-grey-1",
     "HideSearchBar": false,
+    "GridOnMobile": true,
     "Data": {
       "Columns": [
         {
-          "name": "name",
+          "name": "Section",
           "required": true,
-          "label": "Name",
+          "label": "Section",
           "align": "left",
-          "field": "name",
+          "field": "Section",
           "sortable": "true",
           "style": "white-space: pre-line;"
         },
         {
-          "name": "designation",
+          "name": "Designation",
           "align": "left",
           "label": "Designation",
-          "field": "designation",
+          "field": "Designation",
           "sortable": true,
           "style": "white-space: pre-line;"
         },
         {
-          "name": "officeAddress",
-          "label": "Office Address",
-          "field": "officeAddress",
-          "sortable": true,
-          "align": "left",
-          "style": "white-space: pre-line;"
-        },
-        {
-          "name": "officeNumber",
-          "label": "Office Number",
-          "field": "officeNumber",
+          "name": "WD",
+          "label": "Division",
+          "field": "WD",
           "sortable": true,
           "align": "left",
           "style": "white-space: pre-line;"
         },
         {
-          "name": "mobileNumber",
+          "name": "SD",
+          "label": "Sub Division",
+          "field": "SD",
+          "sortable": true,
+          "align": "left",
+          "style": "white-space: pre-line;"
+        },
+        {
+          "name": "Mobile",
           "label": "Mobile Number",
-          "field": "mobileNumber",
-          "sortable": true,
-          "align": "left",
-          "style": "white-space: pre-line;"
-        },
-        {
-          "name": "emailId",
-          "label": "Email Id",
-          "field": "emailId",
-          "sortable": true,
-          "align": "left",
-          "style": "white-space: pre-line;"
-        },
-        {
-          "name": "jurisdictionDuties",
-          "label": "Jurisdiction/Duties",
-          "field": "jurisdictionDuties",
+          "field": "Mobile",
           "sortable": true,
           "align": "left",
           "style": "white-space: pre-line;"
         }
       ],
-      "Rows": [
-        {
-          "name": "Shri. Deelip T. Kerkar",
-          "designation": "Junior Engineer",
-          "officeAddress": "SD-III, WD XXV(R),PWD, Dharbandora-Goa.",
-          "officeNumber": "",
-          "mobileNumber": "7620827196",
-          "emailId": "ee25-pwd.goa@nic.in",
-          "jurisdictionDuties": "V.P.Dharbandora,V.P. Kirlapal Dabal of Sanvordem Constituency."
-        },
-        {
-          "name": "Shri. Nitin R. Mayekar",
-          "designation": "Junior Engineer",
-          "officeAddress": "SD-IV, WDXXV(R), PWD, Sanguem-Goa.",
-          "officeNumber": "",
-          "mobileNumber": "9168694680",
-          "emailId": "ee25-pwd.goa@nic.in",
-          "jurisdictionDuties": "Sanguem Constituency."
-        },
-        {
-          "name": "Shri. Sameer Naik",
-          "designation": "Junior Engineer",
-          "officeAddress": "SD-III, WDXXV(R), PWD, Dharbandora -Goa.",
-          "officeNumber": "",
-          "mobileNumber": "9764315314",
-          "emailId": "ee25-pwd.goa@nic.in",
-          "jurisdictionDuties": "V.P. Kalay of Sanvordem Constituency."
-        },
-        {
-          "name": "Smt. Relada A. Fenandes",
-          "designation": "Junior Engineer",
-          "officeAddress": "WDXXV(R), PWD, Fatorda, Margao-Goa.",
-          "officeNumber": "",
-          "mobileNumber": "9822141831",
-          "emailId": "ee25-pwd.goa@nic.in",
-          "jurisdictionDuties": "Technical works pertaining to SD-I and SD-II (Technical Section)."
-        },
-        {
-          "name": "Shri. Uttam P. Parsekar",
-          "designation": "Principal Chief Engineer",
-          "officeAddress": "Public Works Department Govt. of Goa Head Office Altinho Panaji Goa 403001",
-          "officeNumber": "0832-2224984 /0832-2422901",
-          "mobileNumber": "",
-          "emailId": "pce-pwd.goa@nic.in",
-          "jurisdictionDuties": "Buildings Sector, Roads & Bridges, National Highway, Water Supply and Sanitation for state of Goa."
-        },
-        {
-          "name": "Shri. Kishore Kolwalkar",
-          "designation": "Engineering Officer",
-          "officeAddress": "Office of Principal Chief Engineer Public Works Department Altinho Panaji Goa 403001",
-          "officeNumber": "0832224984",
-          "mobileNumber": "7767016250",
-          "emailId": "engof-pwd.goa@nic.in",
-          "jurisdictionDuties": "1) Enlistment of Contractors. 2) Legislative Assembly Matters."
-        }
-      ],
-      "VisibleColumns": [
-        "name",
-        "designation",
-        "officeAddress",
-        "officeNumber",
-        "mobileNumber",
-        "emailId",
-        "jurisdictionDuties"
-      ]
+      "Rows": [],
+      "VisibleColumns": ["Section", "Designation", "WD", "SD", "Mobile"]
     }
   }
 }

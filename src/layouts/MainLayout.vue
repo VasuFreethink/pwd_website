@@ -337,7 +337,7 @@
             </p>
           </div>
           <div class="q-pr-md" :style="$q.screen.lt.sm ? 'width: 100%' : ''">
-            <p>freethink v2024.02.28.01</p>
+            <p>freethink v2024.03.12.01</p>
           </div>
         </div>
       </div>

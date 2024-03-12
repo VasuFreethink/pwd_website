@@ -14,7 +14,9 @@
       :columns="jsonData.Data.Columns"
       row-key="name"
       :filter="filter"
+      :grid="$q.screen.lt.sm && jsonData.GridOnMobile"
       :visible-columns="jsonData.Data.VisibleColumns"
+      :rows-per-page-options="jsonData.RowsPerPageOptions"
     >
       <template v-slot:top-right>
         <q-input
