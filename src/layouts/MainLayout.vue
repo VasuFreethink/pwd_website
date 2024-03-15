@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh lpr lFf" :style="{ fontSize: fontSize }">
+  <q-layout view="lHh lpr lff" :style="{ fontSize: fontSize }">
     <!-- style="font-size: 160%" -->
     <q-header elevated>
       <!-- <q-btn flat round dense icon="menu" class="q-mr-sm" /> -->

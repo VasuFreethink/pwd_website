@@ -165,6 +165,36 @@
       }
     ]
   },
+  "StatisticsCount": {
+    "SectionTitle": "Statistics Count",
+    "SummaryLength": 4,
+    "Data": [
+      {
+        "Title": "Potholes Fixed",
+        "Stats": "10789+",
+        "Icon": "add_road",
+        "BackgroundColorCode": "#3ACCCC"
+      },
+      {
+        "Title": "Water Connections",
+        "Stats": "4089+",
+        "Icon": "water_drop",
+        "BackgroundColorCode": "#3d9970"
+      },
+      {
+        "Title": "Grivenaces Fixed",
+        "Stats": "15789+",
+        "Icon": "summarize",
+        "BackgroundColorCode": "#49a657"
+      },
+      {
+        "Title": "Registered Tankers",
+        "Stats": "107+",
+        "Icon": "local_shipping",
+        "BackgroundColorCode": "#ffbf00"
+      }
+    ]
+  },
   "ImportantNotices": {
     "SectionTitle": "Important Notices",
     "SectionType": "announcements",

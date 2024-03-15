@@ -2,13 +2,15 @@
   <q-page>
     <ImageCarousel :jsonData="mainImageCarousel" />
 
+    <statistics-count :jsonData="statisticsCount" />
+    
     <div
       :class="$q.screen.lt.md ? '' : 'q-pa-md'"
-      style="margin-top: 50px"
+      style="margin-top: 10px"
       :style="
         $q.screen.lt.md
           ? ''
-          : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 50px;'
+          : 'width: 82vw; margin-left: auto; margin-right: auto; margin-top: 10px;'
       "
     >
       <!-- Main Structure 8-4 -->
@@ -119,6 +121,7 @@ import DisplayLinks from "src/components/DisplayLinks.vue";
 // import InfoDialog from "src/components/InfoDialog.vue";
 // import ImageCards from "src/components/ImageCards.vue";
 import DetailedCard from "src/components/DetailedCard.vue";
+import StatisticsCount from "src/components/StatisticsCount.vue";
 
 export default defineComponent({
   name: "IndexPage",
@@ -132,6 +135,7 @@ export default defineComponent({
     // InfoDialog,
     // ImageCards,
     DetailedCard,
+    StatisticsCount,
   },
   data() {
     return {
@@ -143,6 +147,9 @@ export default defineComponent({
     };
   },
   computed: {
+    statisticsCount() {
+      return this.homePageData.StatisticsCount;
+    },
     mainImageCarousel() {
       return this.homePageData.MainImageCarousel;
     },
