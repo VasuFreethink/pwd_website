@@ -103,36 +103,46 @@
               'full-width': $q.screen.lt.md,
             }"
           >
-            <div
-              class="float-right d-flex align-items-center justify-content-center gt-sm"
-            >
-              <q-btn
-                class="shadow-none q-mx-xs"
-                size="sm"
-                @click="decreaseFontSize"
-                color="grey-6"
-                round
+            <div class="flex justify-between">
+              <div class="flex items-center" v-if="$q.screen.gt.sm">
+                <img
+                  src="assets/AzadiKaAmritmohotsav.jpg"
+                  alt=""
+                  height="100px"
+                />
+                <img src="assets/SwacchBharat_logo.jpg" alt="" height="100px" />
+              </div>
+              <div
+                class="float-right d-flex align-items-center justify-content-center gt-sm"
               >
-                A-
-              </q-btn>
-              <q-btn
-                size="sm"
-                color="grey-6"
-                @click="resetFontSize"
-                class="shadow-none q-mx-xs"
-                round
-              >
-                A
-              </q-btn>
-              <q-btn
-                color="grey-6"
-                size="sm"
-                @click="increaseFontSize"
-                round
-                class="shadow-none q-mx-xs"
-              >
-                A+
-              </q-btn>
+                <q-btn
+                  class="shadow-none q-mx-xs"
+                  size="sm"
+                  @click="decreaseFontSize"
+                  color="grey-6"
+                  round
+                >
+                  A-
+                </q-btn>
+                <q-btn
+                  size="sm"
+                  color="grey-6"
+                  @click="resetFontSize"
+                  class="shadow-none q-mx-xs"
+                  round
+                >
+                  A
+                </q-btn>
+                <q-btn
+                  color="grey-6"
+                  size="sm"
+                  @click="increaseFontSize"
+                  round
+                  class="shadow-none q-mx-xs"
+                >
+                  A+
+                </q-btn>
+              </div>
             </div>
           </div>
         </div>
@@ -279,19 +289,48 @@
                 </q-item>
               </template>
             </q-expansion-item>
-            <q-item
-              v-else
-              clickable
-              v-ripple
-              @click="handleNavigation(menuItem)"
-            >
-              <q-item-section avatar>
+            <span v-else>
+              <!-- @click="handleNavigation(menuItem)" -->
+              <q-item
+                v-if="menuItem.OpenInfoDialog"
+                :label="menuItem.Label"
+                @click="
+                  openDialog(
+                    additionalData[menuItem.DataSource].Data,
+                    additionalData[menuItem.DataSource]
+                  )
+                "
+                clickable
+                v-ripple
+                :key="'button-' + index"
+                ><q-item-section avatar>
+                  <q-icon color="grey-10" :name="menuItem.Icon" />
+                </q-item-section>
+                <q-item-section class="text-uppercase">{{
+                  menuItem.Label
+                }}</q-item-section></q-item
+              >
+              <q-item
+                v-else
+                :label="menuItem.Label"
+                @click="handleNavigation(menuItem)"
+                :key="'button-' + index"
+                clickable
+                v-ripple
+                ><q-item-section avatar>
+                  <q-icon color="grey-10" :name="menuItem.Icon" />
+                </q-item-section>
+                <q-item-section class="text-uppercase">{{
+                  menuItem.Label
+                }}</q-item-section>
+              </q-item>
+            </span>
+            <!-- <q-item-section avatar>
                 <q-icon color="grey-10" :name="menuItem.Icon" />
               </q-item-section>
               <q-item-section class="text-uppercase">{{
                 menuItem.Label
-              }}</q-item-section>
-            </q-item>
+              }}</q-item-section> -->
           </template>
         </q-list>
       </q-scroll-area>

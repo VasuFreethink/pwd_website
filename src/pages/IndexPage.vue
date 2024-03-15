@@ -3,7 +3,7 @@
     <ImageCarousel :jsonData="mainImageCarousel" />
 
     <statistics-count :jsonData="statisticsCount" />
-    
+
     <div
       :class="$q.screen.lt.md ? '' : 'q-pa-md'"
       style="margin-top: 10px"

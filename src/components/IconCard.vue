@@ -5,6 +5,7 @@
     style="text-decoration: none; color: inherit"
   >
     <q-card
+      data-aos="zoom-in"
       class="my-card shadow-1"
       flat
       bordered

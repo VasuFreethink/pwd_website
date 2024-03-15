@@ -12,6 +12,9 @@
     >
       <q-card
         class="my-card q-py-md"
+        data-aos="fade-left"
+        :data-aos-duration="500 * (index + 1)"
+        :data-aos-delay="500"
         flat
         bordered
         :style="{

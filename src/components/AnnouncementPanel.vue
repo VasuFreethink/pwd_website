@@ -1,6 +1,7 @@
 <template>
   <div>
     <q-card
+      data-aos="fade-up"
       class="my-card shadow-1"
       style="height: 100%"
       :style="{
@@ -59,7 +60,13 @@
             </q-item-label>
           </q-item-section>
           <q-item-section side>
-            <q-icon v-if="item.DownloadButton" color="" name="download" />
+            <q-icon
+              v-if="item.DownloadButton"
+              color=""
+              @click="downloadItem(item)"
+              style="cursor: pointer !important"
+              name="download"
+            />
           </q-item-section>
         </q-item>
       </q-card-section>
@@ -131,6 +138,17 @@ export default {
       this.selectedData = data;
       this.dialogVisible = true;
     },
+    downloadItem(item) {
+      if (item.DownloadLink) {
+        const downloadLink = item.DownloadLink;
+        const anchor = document.createElement("a");
+        anchor.href = downloadLink;
+        anchor.setAttribute("download", "");
+        document.body.appendChild(anchor);
+        anchor.click();
+        document.body.removeChild(anchor);
+      }
+    },
   },
   computed: {
     bgColorClass() {
@@ -154,12 +172,11 @@ export default {
 }
 
 .hoveritem:hover {
-  background-color: rgba(0, 0, 0, 0.12); /* Change background color on hover */
-  cursor: pointer; /* Change cursor on hover */
+  background-color: rgba(0, 0, 0, 0.12);
+  cursor: pointer;
   padding: 2px;
 }
 
-/* Animation for new icon blink */
 @keyframes blink {
   0% {
     opacity: 1;

@@ -30,9 +30,70 @@
             :key="index"
             clickable
             v-ripple
+            style="cursor: pointer"
           >
             <q-card-section class="q-pa-none">
-              <q-item>
+              <a
+                v-if="item.Link"
+                :href="item.Link"
+                style="text-decoration: none; color: inherit"
+              >
+                <q-item>
+                  <q-item-section avatar>
+                    <q-avatar color="primary" text-color="white">
+                      <q-icon name="link" />
+                    </q-avatar>
+                  </q-item-section>
+                  <q-item-section>
+                    <q-item-label>
+                      <span class="text-subtitle1">{{ item.Name }}</span>
+                    </q-item-label>
+                  </q-item-section>
+                </q-item>
+              </a>
+              <a
+                v-if="item.OpenInfoDialog"
+                @click="
+                  openDialog(
+                    additionalData[item.DataSource].Data,
+                    additionalData[item.DataSource]
+                  )
+                "
+                style="text-decoration: none; color: inherit"
+              >
+                <q-item>
+                  <q-item-section avatar>
+                    <q-avatar color="primary" text-color="white">
+                      <q-icon name="link" />
+                    </q-avatar>
+                  </q-item-section>
+                  <q-item-section>
+                    <q-item-label>
+                      <span class="text-subtitle1">{{ item.Name }}</span>
+                    </q-item-label>
+                  </q-item-section>
+                </q-item>
+              </a>
+              <a
+                v-if="item.OpenDisplayDialog"
+                @click="openDisplayDialog(additionalData[item.DataSource])"
+                style="text-decoration: none; color: inherit"
+              >
+                <q-item>
+                  <q-item-section avatar>
+                    <q-avatar color="primary" text-color="white">
+                      <q-icon name="link" />
+                    </q-avatar>
+                  </q-item-section>
+                  <q-item-section>
+                    <q-item-label>
+                      <span class="text-subtitle1">{{ item.Name }}</span>
+                    </q-item-label>
+                  </q-item-section>
+                </q-item>
+              </a>
+
+              <!-- <q-item>
                 <q-item-section avatar>
                   <q-avatar color="primary" text-color="white">
                     <q-icon name="link" />
@@ -70,7 +131,7 @@
                     >
                   </q-item-label>
                 </q-item-section>
-              </q-item>
+              </q-item> -->
             </q-card-section>
           </q-card>
         </div>
@@ -211,12 +272,12 @@ export default {
 
 <style scoped>
 .contact-link {
-  color: #007bff; /* Blue color for links */
-  text-decoration: underline; /* Underline the link */
-  cursor: pointer; /* Show pointer cursor on hover */
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .contact-link:hover {
-  color: #0056b3; /* Darker blue color on hover */
+  color: #0056b3;
 }
 </style>
